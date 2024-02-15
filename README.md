@@ -35,6 +35,9 @@ Choose an option:
 1. Look up ASN and organization name by IP address
 2. Fetch neighbor ASNs for a given ASN
 3. Fetch historical neighbor ASNs for a given ASN
+4. Get Abuse contact information for an ip
+5. Get Historical whois information for a domain
+6. Exit
 
 Enter an IP address to look up: 8.8.8.8
 
