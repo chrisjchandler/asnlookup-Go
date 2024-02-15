@@ -36,7 +36,7 @@ Choose an option:
 2. Fetch neighbor ASNs for a given ASN
 3. Fetch historical neighbor ASNs for a given ASN
 4. Get Abuse contact information for an ip
-5. Get Historical whois information for a domain
+5. Get Historical whois change count for a IP Address
 6. Exit
 
 Enter an IP address to look up: 8.8.8.8
