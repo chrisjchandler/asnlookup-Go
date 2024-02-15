@@ -21,6 +21,8 @@ The program will prompt you with three options:
 1 for looking up ASN and organization name by IP address.
 2 for fetching neighbor ASNs for a given ASN.
 3 for fetching historical neighbor ASNs for a given ASN.
+4 shows abuse contacts for an asn or an ip
+5 shows the historical nubmer of times whois records for an IP have changed
 Enter the Required Information:
 
 For option 1, you will be prompted to enter an IP address.
@@ -39,3 +41,5 @@ Enter an IP address to look up: 8.8.8.8
 
 Note
 The accuracy and availability of data depend on the RIPE Stat API's current status and data coverage.
+
+An IP prefix may have multiple associated ASN's (for a variety of reasons) you can use my RPKI checker to get other ASN's https://github.com/chrisjchandler/RPKI_check_tool
