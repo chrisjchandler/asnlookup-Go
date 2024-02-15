@@ -35,7 +35,7 @@ func main() {
 		fmt.Println("2. Fetch neighbor ASNs for a given ASN")
 		fmt.Println("3. Fetch historical neighbor ASNs for a given ASN")
 		fmt.Println("4. Get Abuse contact information for an ip")
-		fmt.Println("5. Get Historical whois information for a domain")
+		fmt.Println("5. Get Historical whois change count for a IP Address")
 		fmt.Println("6. Exit")
 		var choice int
 		fmt.Scanln(&choice)
@@ -63,7 +63,7 @@ func main() {
 			fetchAbuseContact(resource)
 		case 5:
 			var domain string
-			fmt.Println("Enter a domain to find its historical WHOIS information:")
+			fmt.Println("Enter a IP to find its historical WHOIS change count:")
 			fmt.Scanf("%s", &domain)
 			fetchHistoricalWhois(domain)
 		case 6:
