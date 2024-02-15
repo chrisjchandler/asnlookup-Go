@@ -29,43 +29,49 @@ type ASNResponse struct {
 }
 
 func main() {
-	fmt.Println("Choose an option:")
-	fmt.Println("1. Look up ASN and organization name by IP address")
-	fmt.Println("2. Fetch neighbor ASNs for a given ASN")
-	fmt.Println("3. Fetch historical neighbor ASNs for a given ASN")
-	fmt.Println("4. Get Abuse contact information for an ip")
-	fmt.Println("5. Get Historical number of whois changes for an IP")
-	var choice int
-	fmt.Scanln(&choice)
+	for {
+		fmt.Println("Choose an option:")
+		fmt.Println("1. Look up ASN and organization name by IP address")
+		fmt.Println("2. Fetch neighbor ASNs for a given ASN")
+		fmt.Println("3. Fetch historical neighbor ASNs for a given ASN")
+		fmt.Println("4. Get Abuse contact information for an ip")
+		fmt.Println("5. Get Historical whois information for a domain")
+		fmt.Println("6. Exit")
+		var choice int
+		fmt.Scanln(&choice)
 
-	switch choice {
-	case 1:
-		var ip string
-		fmt.Println("Enter an IP address to look up: ")
-		fmt.Scanln(&ip)
-		lookupASNByIP(ip)
-	case 2:
-		var asn string
-		fmt.Println("Enter an ASN to find its neighbors: ")
-		fmt.Scanln(&asn)
-		fetchASNNeighbors(asn, false)
-	case 3:
-		var asn string
-		fmt.Println("Enter an ASN to find its historical neighbors: ")
-		fmt.Scanln(&asn)
-		fetchASNNeighbors(asn, true)
-	case 4:
-		var resource string
-		fmt.Println("Enter an ASN or IP address to find its abuse contact:")
-		fmt.Scanf("%s", &resource)
-		fetchAbuseContact(resource)
-	case 5:
-		var asn string
-		fmt.Println("Enter an ip to find its historical WHOIS information:")
-		fmt.Scanf("%s", &asn)
-		fetchHistoricalWhois(asn)
-	default:
-		fmt.Println("Invalid choice. Please enter 1, 2, or 3.")
+		switch choice {
+		case 1:
+			var ip string
+			fmt.Println("Enter an IP address to look up: ")
+			fmt.Scanln(&ip)
+			lookupASNByIP(ip)
+		case 2:
+			var asn string
+			fmt.Println("Enter an ASN to find its neighbors: ")
+			fmt.Scanln(&asn)
+			fetchASNNeighbors(asn, false)
+		case 3:
+			var asn string
+			fmt.Println("Enter an ASN to find its historical neighbors: ")
+			fmt.Scanln(&asn)
+			fetchASNNeighbors(asn, true)
+		case 4:
+			var resource string
+			fmt.Println("Enter an ASN or IP address to find its abuse contact:")
+			fmt.Scanf("%s", &resource)
+			fetchAbuseContact(resource)
+		case 5:
+			var domain string
+			fmt.Println("Enter a domain to find its historical WHOIS information:")
+			fmt.Scanf("%s", &domain)
+			fetchHistoricalWhois(domain)
+		case 6:
+			fmt.Println("Exiting...")
+			return
+		default:
+			fmt.Println("Invalid choice. Please enter a number between 1 and 6.")
+		}
 	}
 }
 
@@ -103,8 +109,8 @@ func fetchAbuseContact(resource string) {
 	}
 }
 
-func fetchHistoricalWhois(asn string) {
-	resp, err := http.Get(fmt.Sprintf("https://stat.ripe.net/data/historical-whois/data.json?resource=%s", asn))
+func fetchHistoricalWhois(domain string) {
+	resp, err := http.Get(fmt.Sprintf("https://stat.ripe.net/data/historical-whois/data.json?resource=%s", domain))
 	if err != nil {
 		fmt.Println("Error fetching historical WHOIS information:", err)
 		return
@@ -179,8 +185,8 @@ func fetchData(url string, historical bool) {
 			fmt.Printf("ASN: %d, Holder: %s\n", asnInfo.Asn, asnInfo.Holder)
 		}
 		for _, neighbour := range response.Data.Neighbours {
-	fmt.Printf("ASN: %d, Type: %s, Power: %d, IPv4 Peers: %d, IPv6 Peers: %d\n",
-		neighbour.Asn, neighbour.Type, neighbour.Power, neighbour.V4Peers, neighbour.V6Peers)
+			fmt.Printf("ASN: %d, Type: %s, Power: %d, IPv4 Peers: %d, IPv6 Peers: %d\n",
+				neighbour.Asn, neighbour.Type, neighbour.Power, neighbour.V4Peers, neighbour.V6Peers)
+		}
 	}
-}
 }
