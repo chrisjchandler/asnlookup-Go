@@ -89,4 +89,3 @@ Choose an option:
     25. Fetch ASN history for a given ASN
     26. Exit
 
-Enter an IP address to look up: 8.8.8.8
