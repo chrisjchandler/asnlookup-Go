@@ -36,29 +36,28 @@ After compiling the Go program, you can run it to access its functionalities. He
     12. Fetch blacklist information for a given IP address
     13. Fetch IP address space information for a given ASN
     14. Fetch AS path information for a given ASN
-    15. Fetch country resource information for a given country code
-    16. Fetch IP address block information for a given IP address
-    17. Fetch routing status for a given IP address
-    18. Fetch routing consistency for a given ASN
-    19. Fetch routing status for a given ASN
-    20. Fetch routing consistency for a given IP address
-    21. Fetch routing status for a given prefix
-    22. Fetch routing consistency for a given prefix
-    23. Fetch routing status for a given country code
-    24. Fetch routing consistency for a given country code
-    25. Fetch routing status for a given IP address block
+    15. Fetch IP address block information for a given IP address
+    16. Fetch routing status for a given IP address
+    17. Fetch routing consistency for a given ASN
+    18. Fetch routing status for a given ASN
+    19. Fetch routing consistency for a given IP address
+    20. Fetch routing status for a given prefix
+    21. Fetch routing consistency for a given prefix
+    22. Fetch routing status for a given IP address block
+    23. Fetch routing consistency for a given IP address block
+    24. Fetch IP address history for a given IP address
+    25. Fetch ASN history for a given ASN
     26. Exit
 
 3. **Enter the Required Information**:
 
     - For option 1, you will be prompted to enter an IP address.
-    - For options 2, 3, 6, 7, 8, 13, 14, 18, and 19, you will be prompted to enter an ASN.
-    - For options 4, 9, 10, 11, 12, 16, 17, and 20, you will be prompted to enter an IP address.
-    - For options 15, 23, and 24, you will be prompted to enter a country code.
+    - For options 2, 3, 6, 7, 8, 13, 14, 17, and 18, you will be prompted to enter an ASN.
+    - For options 4, 9, 10, 11, 12, 15, 16, 19, and 20, you will be prompted to enter an IP address.
     - For options 21 and 22, you will be prompted to enter a prefix.
-    - For option 25, you will be prompted to enter an IP address block.
+    - For options 23, 24, and 25, you will be prompted to enter an IP address block.
 
-4. **View the Results**: The program will display the queried information directly in the terminal.
+4. **View the Results**: The program will display the queried information directly in the terminal and give you an option to save the output to a JSON file.
 
 ```sh
 $ ./asnlookup
@@ -77,17 +76,17 @@ Choose an option:
     12. Fetch blacklist information for a given IP address
     13. Fetch IP address space information for a given ASN
     14. Fetch AS path information for a given ASN
-    15. Fetch country resource information for a given country code
-    16. Fetch IP address block information for a given IP address
-    17. Fetch routing status for a given IP address
-    18. Fetch routing consistency for a given ASN
-    19. Fetch routing status for a given ASN
-    20. Fetch routing consistency for a given IP address
-    21. Fetch routing status for a given prefix
-    22. Fetch routing consistency for a given prefix
-    23. Fetch routing status for a given country code
-    24. Fetch routing consistency for a given country code
-    25. Fetch routing status for a given IP address block
+    15. Fetch IP address block information for a given IP address
+    16. Fetch routing status for a given IP address
+    17. Fetch routing consistency for a given ASN
+    18. Fetch routing status for a given ASN
+    19. Fetch routing consistency for a given IP address
+    20. Fetch routing status for a given prefix
+    21. Fetch routing consistency for a given prefix
+    22. Fetch routing status for a given IP address block
+    23. Fetch routing consistency for a given IP address block
+    24. Fetch IP address history for a given IP address
+    25. Fetch ASN history for a given ASN
     26. Exit
 
 Enter an IP address to look up: 8.8.8.8
