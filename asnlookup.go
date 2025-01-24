@@ -1,20 +1,23 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
+	"time"
 )
 
 // ASNResponse represents the common structure of responses from RIPE Stat API
 type ASNResponse struct {
 	Data struct {
 		Asns []struct {
-			Asn    int    `json:"asn"`   // Change this to int
+			Asn    int    `json:"asn"`
 			Holder string `json:"holder"`
 		} `json:"asns"`
 		Neighbours []struct {
-			Asn      int    `json:"asn"` // Also change here to int
+			Asn      int    `json:"asn"`
 			Type     string `json:"type"`
 			Power    int    `json:"power"`
 			V4Peers  int    `json:"v4_peers"`
@@ -44,17 +47,17 @@ func main() {
 		fmt.Println("12. Fetch blacklist information for a given IP address")
 		fmt.Println("13. Fetch IP address space information for a given ASN")
 		fmt.Println("14. Fetch AS path information for a given ASN")
-		fmt.Println("15. Fetch country resource information for a given country code")
-		fmt.Println("16. Fetch IP address block information for a given IP address")
-		fmt.Println("17. Fetch routing status for a given IP address")
-		fmt.Println("18. Fetch routing consistency for a given ASN")
-		fmt.Println("19. Fetch routing status for a given ASN")
-		fmt.Println("20. Fetch routing consistency for a given IP address")
-		fmt.Println("21. Fetch routing status for a given prefix")
-		fmt.Println("22. Fetch routing consistency for a given prefix")
-		fmt.Println("23. Fetch routing status for a given country code")
-		fmt.Println("24. Fetch routing consistency for a given country code")
-		fmt.Println("25. Fetch routing status for a given IP address block")
+		fmt.Println("15. Fetch IP address block information for a given IP address")
+		fmt.Println("16. Fetch routing status for a given IP address")
+		fmt.Println("17. Fetch routing consistency for a given ASN")
+		fmt.Println("18. Fetch routing status for a given ASN")
+		fmt.Println("19. Fetch routing consistency for a given IP address")
+		fmt.Println("20. Fetch routing status for a given prefix")
+		fmt.Println("21. Fetch routing consistency for a given prefix")
+		fmt.Println("22. Fetch routing status for a given IP address block")
+		fmt.Println("23. Fetch routing consistency for a given IP address block")
+		fmt.Println("24. Fetch IP address history for a given IP address")
+		fmt.Println("25. Fetch ASN history for a given ASN")
 		fmt.Println("26. Exit")
 		var choice int
 		fmt.Scanln(&choice)
@@ -89,27 +92,27 @@ func main() {
 		case 14:
 			fetchASPathInfo()
 		case 15:
-			fetchCountryResourceInfo()
-		case 16:
 			fetchIPAddressBlockInfo()
-		case 17:
+		case 16:
 			fetchRoutingStatusByIP()
-		case 18:
+		case 17:
 			fetchRoutingConsistencyByASN()
-		case 19:
+		case 18:
 			fetchRoutingStatusByASN()
-		case 20:
+		case 19:
 			fetchRoutingConsistencyByIP()
-		case 21:
+		case 20:
 			fetchRoutingStatusByPrefix()
-		case 22:
+		case 21:
 			fetchRoutingConsistencyByPrefix()
-		case 23:
-			fetchRoutingStatusByCountryCode()
-		case 24:
-			fetchRoutingConsistencyByCountryCode()
-		case 25:
+		case 22:
 			fetchRoutingStatusByIPAddressBlock()
+		case 23:
+			fetchRoutingConsistencyByIPAddressBlock()
+		case 24:
+			fetchIPAddressHistory()
+		case 25:
+			fetchASNHistory()
 		case 26:
 			return
 		default:
@@ -143,6 +146,7 @@ func fetchRoutingHistory() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-history/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("Routing History:", response)
+	writeToFile("fetchRoutingHistory", response)
 }
 
 func fetchPrefixInfo() {
@@ -150,6 +154,7 @@ func fetchPrefixInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/announced-prefixes/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("Prefix Information:", response)
+	writeToFile("fetchPrefixInfo", response)
 }
 
 func fetchBGPUpdates() {
@@ -157,6 +162,7 @@ func fetchBGPUpdates() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/bgp-updates/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("BGP Updates:", response)
+	writeToFile("fetchBGPUpdates", response)
 }
 
 func fetchGeolocationInfo() {
@@ -164,6 +170,7 @@ func fetchGeolocationInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/geoloc/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("Geolocation Information:", response)
+	writeToFile("fetchGeolocationInfo", response)
 }
 
 func fetchReverseDNSInfo() {
@@ -171,6 +178,7 @@ func fetchReverseDNSInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/reverse-dns-ip/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("Reverse DNS Information:", response)
+	writeToFile("fetchReverseDNSInfo", response)
 }
 
 func fetchNetworkInfo() {
@@ -178,6 +186,7 @@ func fetchNetworkInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/network-info/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("Network Information:", response)
+	writeToFile("fetchNetworkInfo", response)
 }
 
 func fetchBlacklistInfo() {
@@ -185,6 +194,7 @@ func fetchBlacklistInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/blacklist/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("Blacklist Information:", response)
+	writeToFile("fetchBlacklistInfo", response)
 }
 
 func fetchIPAddressSpaceInfo() {
@@ -192,6 +202,7 @@ func fetchIPAddressSpaceInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/address-space-hierarchy/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("IP Address Space Information:", response)
+	writeToFile("fetchIPAddressSpaceInfo", response)
 }
 
 func fetchASPathInfo() {
@@ -199,13 +210,7 @@ func fetchASPathInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/as-path-length/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("AS Path Information:", response)
-}
-
-func fetchCountryResourceInfo() {
-	countryCode := getInput("Enter country code: ")
-	url := fmt.Sprintf("https://stat.ripe.net/data/country-resource-list/data.json?resource=%s", countryCode)
-	response := fetchData(url)
-	fmt.Println("Country Resource Information:", response)
+	writeToFile("fetchASPathInfo", response)
 }
 
 func fetchIPAddressBlockInfo() {
@@ -213,6 +218,7 @@ func fetchIPAddressBlockInfo() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/address-blocks/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("IP Address Block Information:", response)
+	writeToFile("fetchIPAddressBlockInfo", response)
 }
 
 func fetchRoutingStatusByIP() {
@@ -220,6 +226,7 @@ func fetchRoutingStatusByIP() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-status/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("Routing Status by IP:", response)
+	writeToFile("fetchRoutingStatusByIP", response)
 }
 
 func fetchRoutingConsistencyByASN() {
@@ -227,6 +234,7 @@ func fetchRoutingConsistencyByASN() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-consistency/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("Routing Consistency by ASN:", response)
+	writeToFile("fetchRoutingConsistencyByASN", response)
 }
 
 func fetchRoutingStatusByASN() {
@@ -234,6 +242,7 @@ func fetchRoutingStatusByASN() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-status/data.json?resource=%s", asn)
 	response := fetchData(url)
 	fmt.Println("Routing Status by ASN:", response)
+	writeToFile("fetchRoutingStatusByASN", response)
 }
 
 func fetchRoutingConsistencyByIP() {
@@ -241,6 +250,7 @@ func fetchRoutingConsistencyByIP() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-consistency/data.json?resource=%s", ip)
 	response := fetchData(url)
 	fmt.Println("Routing Consistency by IP:", response)
+	writeToFile("fetchRoutingConsistencyByIP", response)
 }
 
 func fetchRoutingStatusByPrefix() {
@@ -248,6 +258,7 @@ func fetchRoutingStatusByPrefix() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-status/data.json?resource=%s", prefix)
 	response := fetchData(url)
 	fmt.Println("Routing Status by Prefix:", response)
+	writeToFile("fetchRoutingStatusByPrefix", response)
 }
 
 func fetchRoutingConsistencyByPrefix() {
@@ -255,20 +266,7 @@ func fetchRoutingConsistencyByPrefix() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-consistency/data.json?resource=%s", prefix)
 	response := fetchData(url)
 	fmt.Println("Routing Consistency by Prefix:", response)
-}
-
-func fetchRoutingStatusByCountryCode() {
-	countryCode := getInput("Enter country code: ")
-	url := fmt.Sprintf("https://stat.ripe.net/data/routing-status/data.json?resource=%s", countryCode)
-	response := fetchData(url)
-	fmt.Println("Routing Status by Country Code:", response)
-}
-
-func fetchRoutingConsistencyByCountryCode() {
-	countryCode := getInput("Enter country code: ")
-	url := fmt.Sprintf("https://stat.ripe.net/data/routing-consistency/data.json?resource=%s", countryCode)
-	response := fetchData(url)
-	fmt.Println("Routing Consistency by Country Code:", response)
+	writeToFile("fetchRoutingConsistencyByPrefix", response)
 }
 
 func fetchRoutingStatusByIPAddressBlock() {
@@ -276,6 +274,31 @@ func fetchRoutingStatusByIPAddressBlock() {
 	url := fmt.Sprintf("https://stat.ripe.net/data/routing-status/data.json?resource=%s", ipBlock)
 	response := fetchData(url)
 	fmt.Println("Routing Status by IP Address Block:", response)
+	writeToFile("fetchRoutingStatusByIPAddressBlock", response)
+}
+
+func fetchRoutingConsistencyByIPAddressBlock() {
+	ipBlock := getInput("Enter IP address block: ")
+	url := fmt.Sprintf("https://stat.ripe.net/data/routing-consistency/data.json?resource=%s", ipBlock)
+	response := fetchData(url)
+	fmt.Println("Routing Consistency by IP Address Block:", response)
+	writeToFile("fetchRoutingConsistencyByIPAddressBlock", response)
+}
+
+func fetchIPAddressHistory() {
+	ip := getInput("Enter IP address: ")
+	url := fmt.Sprintf("https://stat.ripe.net/data/address-history/data.json?resource=%s", ip)
+	response := fetchData(url)
+	fmt.Println("IP Address History:", response)
+	writeToFile("fetchIPAddressHistory", response)
+}
+
+func fetchASNHistory() {
+	asn := getInput("Enter ASN: ")
+	url := fmt.Sprintf("https://stat.ripe.net/data/asn-history/data.json?resource=%s", asn)
+	response := fetchData(url)
+	fmt.Println("ASN History:", response)
+	writeToFile("fetchASNHistory", response)
 }
 
 func getInput(prompt string) string {
@@ -298,4 +321,24 @@ func fetchData(url string) string {
 		return ""
 	}
 	return string(body)
+}
+
+func writeToFile(testName, data string) {
+	fileName := fmt.Sprintf("%s_%s.json", testName, time.Now().Format("20060102_150405"))
+	fileData := map[string]interface{}{
+		"test_name": testName,
+		"date_run":  time.Now().Format(time.RFC3339),
+		"data":      json.RawMessage(data),
+	}
+	fileContent, err := json.MarshalIndent(fileData, "", "  ")
+	if err != nil {
+		fmt.Println("Error marshalling data to JSON:", err)
+		return
+	}
+	err = ioutil.WriteFile(fileName, fileContent, 0644)
+	if err != nil {
+		fmt.Println("Error writing to file:", err)
+		return
+	}
+	fmt.Printf("Data written to file: %s\n", fileName)
 }
