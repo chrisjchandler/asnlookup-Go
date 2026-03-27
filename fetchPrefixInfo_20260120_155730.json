@@ -1,0 +1,142 @@
+{
+  "data": {
+    "messages": [
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ]
+    ],
+    "see_also": [],
+    "version": "1.2",
+    "data_call_name": "announced-prefixes",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260120205730-932c775d-3193-4c81-913e-45ce06d8e44e",
+    "process_time": 29,
+    "server_id": "app181",
+    "build_version": "main-2026.01.16",
+    "pipeline": "1127034",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-01-20T20:57:30.119345",
+    "data": {
+      "prefixes": [
+        {
+          "prefix": "205.167.104.0/23",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "216.93.128.0/20",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "155.254.12.0/22",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "24.35.192.0/20",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "96.47.80.0/20",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "204.58.196.0/22",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "199.119.96.0/22",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "142.154.128.0/18",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "64.130.96.0/19",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "162.216.244.0/22",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "139.177.0.0/18",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "198.73.24.0/22",
+          "timelines": [
+            {
+              "starttime": "2026-01-06T16:00:00",
+              "endtime": "2026-01-20T16:00:00"
+            }
+          ]
+        }
+      ],
+      "query_starttime": "2026-01-06T16:00:00",
+      "query_endtime": "2026-01-20T16:00:00",
+      "resource": "13825",
+      "latest_time": "2026-01-20T16:00:00",
+      "earliest_time": "2000-08-01T00:00:00"
+    }
+  },
+  "date_run": "2026-01-20T15:57:30-05:00",
+  "test_name": "fetchPrefixInfo"
+}

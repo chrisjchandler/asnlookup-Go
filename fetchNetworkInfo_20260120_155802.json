@@ -1,0 +1,26 @@
+{
+  "data": {
+    "messages": [],
+    "see_also": [],
+    "version": "1.1",
+    "data_call_name": "network-info",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260120205802-5b750b94-6c17-4713-95d7-26eecaf544ce",
+    "process_time": 4,
+    "server_id": "app181",
+    "build_version": "main-2026.01.16",
+    "pipeline": "1127034",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-01-20T20:58:02.109522",
+    "data": {
+      "asns": [
+        "13825"
+      ],
+      "prefix": "139.177.0.0/18"
+    }
+  },
+  "date_run": "2026-01-20T15:58:02-05:00",
+  "test_name": "fetchNetworkInfo"
+}

@@ -1,0 +1,270 @@
+{
+  "data": {
+    "messages": [
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ],
+      [
+        "info",
+        "Related more-specific prefixes has been truncated! 50 shown out of 286"
+      ]
+    ],
+    "see_also": [],
+    "version": "3.4",
+    "data_call_name": "routing-status",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260327124341-05704a14-e946-4b38-b009-1e5182d61db0",
+    "process_time": 909,
+    "server_id": "app192",
+    "build_version": "v0.9.3-redeploy-2026.03.25",
+    "pipeline": "1204408",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-03-27T12:43:42.157372",
+    "data": {
+      "first_seen": {
+        "prefix": "8.0.0.0/12",
+        "origin": "3356",
+        "time": "2018-01-31T08:00:00"
+      },
+      "last_seen": {
+        "prefix": "8.0.0.0/12",
+        "origin": "3356",
+        "time": "2026-03-27T08:00:00"
+      },
+      "visibility": {
+        "v4": {
+          "ris_peers_seeing": 325,
+          "total_ris_peers": 327
+        },
+        "v6": {
+          "ris_peers_seeing": 0,
+          "total_ris_peers": 0
+        }
+      },
+      "origins": [
+        {
+          "origin": 3356,
+          "route_objects": [
+            "RADB",
+            "LEVEL3"
+          ]
+        }
+      ],
+      "less_specifics": [
+        {
+          "prefix": "8.0.0.0/9",
+          "origin": 3356
+        }
+      ],
+      "more_specifics": [
+        {
+          "prefix": "8.3.80.0/20",
+          "origin": 395354
+        },
+        {
+          "prefix": "8.3.112.0/20",
+          "origin": 7131
+        },
+        {
+          "prefix": "8.2.208.0/21",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.108.0/22",
+          "origin": 46636
+        },
+        {
+          "prefix": "8.2.132.0/22",
+          "origin": 19224
+        },
+        {
+          "prefix": "8.2.144.0/22",
+          "origin": 36394
+        },
+        {
+          "prefix": "8.2.208.0/22",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.212.0/22",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.3.48.0/22",
+          "origin": 395148
+        },
+        {
+          "prefix": "8.3.80.0/22",
+          "origin": 395354
+        },
+        {
+          "prefix": "8.3.88.0/22",
+          "origin": 395354
+        },
+        {
+          "prefix": "8.3.92.0/22",
+          "origin": 395354
+        },
+        {
+          "prefix": "8.2.130.0/23",
+          "origin": 396238
+        },
+        {
+          "prefix": "8.2.176.0/23",
+          "origin": 396238
+        },
+        {
+          "prefix": "8.2.184.0/23",
+          "origin": 23089
+        },
+        {
+          "prefix": "8.2.186.0/23",
+          "origin": 396238
+        },
+        {
+          "prefix": "8.2.192.0/23",
+          "origin": 62738
+        },
+        {
+          "prefix": "8.2.194.0/23",
+          "origin": 62738
+        },
+        {
+          "prefix": "8.2.208.0/23",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.210.0/23",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.212.0/23",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.214.0/23",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.218.0/23",
+          "origin": 32208
+        },
+        {
+          "prefix": "8.2.220.0/23",
+          "origin": 23089
+        },
+        {
+          "prefix": "8.2.222.0/23",
+          "origin": 23089
+        },
+        {
+          "prefix": "8.3.54.0/23",
+          "origin": 63402
+        },
+        {
+          "prefix": "8.3.64.0/23",
+          "origin": 16743
+        },
+        {
+          "prefix": "8.2.17.0/24",
+          "origin": 397892
+        },
+        {
+          "prefix": "8.2.18.0/24",
+          "origin": 398997
+        },
+        {
+          "prefix": "8.2.68.0/24",
+          "origin": 396835
+        },
+        {
+          "prefix": "8.2.69.0/24",
+          "origin": 394558
+        },
+        {
+          "prefix": "8.2.70.0/24",
+          "origin": 394928
+        },
+        {
+          "prefix": "8.2.71.0/24",
+          "origin": 27614
+        },
+        {
+          "prefix": "8.2.72.0/24",
+          "origin": 395922
+        },
+        {
+          "prefix": "8.2.79.0/24",
+          "origin": 30118
+        },
+        {
+          "prefix": "8.2.96.0/24",
+          "origin": 53393
+        },
+        {
+          "prefix": "8.2.104.0/24",
+          "origin": 53506
+        },
+        {
+          "prefix": "8.2.105.0/24",
+          "origin": 36671
+        },
+        {
+          "prefix": "8.2.118.0/24",
+          "origin": 14610
+        },
+        {
+          "prefix": "8.2.119.0/24",
+          "origin": 14610
+        },
+        {
+          "prefix": "8.2.197.0/24",
+          "origin": 394041
+        },
+        {
+          "prefix": "8.2.210.0/24",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.214.0/24",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.215.0/24",
+          "origin": 32798
+        },
+        {
+          "prefix": "8.2.216.0/24",
+          "origin": 32208
+        },
+        {
+          "prefix": "8.2.217.0/24",
+          "origin": 23089
+        },
+        {
+          "prefix": "8.2.224.0/24",
+          "origin": 399573
+        },
+        {
+          "prefix": "8.2.225.0/24",
+          "origin": 394265
+        },
+        {
+          "prefix": "8.3.3.0/24",
+          "origin": 399183
+        },
+        {
+          "prefix": "8.3.28.0/24",
+          "origin": 23019
+        }
+      ],
+      "resource": "8.0.0.0/12",
+      "query_time": "2026-03-27T00:00:00"
+    }
+  },
+  "date_run": "2026-03-27T08:43:42-04:00",
+  "test_name": "deriveASNFromIPOrPrefix"
+}

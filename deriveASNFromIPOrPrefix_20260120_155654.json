@@ -1,0 +1,59 @@
+{
+  "data": {
+    "messages": [
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ]
+    ],
+    "see_also": [],
+    "version": "3.4",
+    "data_call_name": "routing-status",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260120205653-1a5ae15b-105e-4f15-9304-2fca078ea1f1",
+    "process_time": 788,
+    "server_id": "app181",
+    "build_version": "main-2026.01.16",
+    "pipeline": "1127034",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-01-20T20:56:54.109596",
+    "data": {
+      "first_seen": {
+        "prefix": "139.177.0.0/18",
+        "origin": "13825",
+        "time": "2022-09-08T16:00:00"
+      },
+      "last_seen": {
+        "prefix": "139.177.0.0/18",
+        "origin": "13825",
+        "time": "2026-01-20T16:00:00"
+      },
+      "visibility": {
+        "v4": {
+          "ris_peers_seeing": 319,
+          "total_ris_peers": 320
+        },
+        "v6": {
+          "ris_peers_seeing": 0,
+          "total_ris_peers": 0
+        }
+      },
+      "origins": [
+        {
+          "origin": 13825,
+          "route_objects": [
+            "ARIN"
+          ]
+        }
+      ],
+      "less_specifics": [],
+      "more_specifics": [],
+      "resource": "139.177.0.0/18",
+      "query_time": "2026-01-20T16:00:00"
+    }
+  },
+  "date_run": "2026-01-20T15:56:54-05:00",
+  "test_name": "deriveASNFromIPOrPrefix"
+}

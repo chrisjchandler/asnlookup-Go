@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
 	"strconv"
 	"strings"
@@ -82,9 +83,9 @@ func main() {
 		fmt.Println("9. Fetch reverse DNS information for a given IP address")
 		fmt.Println("10. Fetch network information for a given IP address")
 		fmt.Println("11. Fetch blacklist information for a given IP address")
-		fmt.Println("12. Fetch IP address space information for a given ASN")
+		fmt.Println("12. Fetch IP address space hierarchy for a given prefix or IP")
 		fmt.Println("13. Fetch AS path information for a given ASN")
-		fmt.Println("14. Fetch IP address block information for a given IP address")
+		fmt.Println("14. Fetch address space usage for a given prefix or IP")
 		fmt.Println("15. Fetch routing status for a given IP address")
 		fmt.Println("16. Fetch routing consistency for a given ASN")
 		fmt.Println("17. Fetch routing status for a given ASN")
@@ -93,8 +94,8 @@ func main() {
 		fmt.Println("20. Fetch routing consistency for a given prefix")
 		fmt.Println("21. Fetch routing status for a given IP address block (CIDR)")
 		fmt.Println("22. Fetch routing consistency for a given IP address block (CIDR)")
-		fmt.Println("23. Fetch IP address history for a given IP address")
-		fmt.Println("24. Fetch ASN history for a given ASN")
+		fmt.Println("23. Fetch allocation history for a given IP address or prefix")
+		fmt.Println("24. Fetch allocation history for a given ASN")
 		fmt.Println("25. Exit")
 		fmt.Println("26. Derive originating ASN(s) from an IP or prefix (CIDR)")
 
@@ -251,7 +252,19 @@ func fetchPrefixInfo(in *bufio.Reader) {
 
 func fetchBGPUpdates(in *bufio.Reader) {
 	asn := normalizeASN(readLine(in, "Enter ASN: "))
-	raw := mustFetch(fmt.Sprintf("%s/bgp-updates/data.json?resource=%s", ripeBase, asn))
+	if asn == "" {
+		return
+	}
+	start := normalizeTimeParam(readLine(in, "Enter start time (YYYY-MM-DD or RFC3339, blank = 1 hour ago): "), time.Now().Add(-1*time.Hour))
+	endInput := readLine(in, "Enter end time (YYYY-MM-DD or RFC3339, blank = now): ")
+	params := url.Values{}
+	params.Set("resource", asn)
+	params.Set("starttime", start)
+	if strings.TrimSpace(endInput) != "" {
+		end := normalizeTimeParam(endInput, time.Now())
+		params.Set("endtime", end)
+	}
+	raw := mustFetch(fmt.Sprintf("%s/bgp-updates/data.json?%s", ripeBase, params.Encode()))
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchBGPUpdates", raw)
 }
@@ -279,14 +292,25 @@ func fetchNetworkInfo(in *bufio.Reader) {
 
 func fetchBlacklistInfo(in *bufio.Reader) {
 	ip := readLine(in, "Enter IP: ")
-	raw := mustFetch(fmt.Sprintf("%s/blacklist/data.json?resource=%s", ripeBase, ip))
+	raw := mustFetch(fmt.Sprintf("%s/dns-blocklists/data.json?resource=%s", ripeBase, ip))
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchBlacklistInfo", raw)
 }
 
 func fetchIPAddressSpaceInfo(in *bufio.Reader) {
-	asn := normalizeASN(readLine(in, "Enter ASN: "))
-	raw := mustFetch(fmt.Sprintf("%s/address-space-hierarchy/data.json?resource=%s", ripeBase, asn))
+	resource := readLine(in, "Enter prefix or IP: ")
+	if resource == "" {
+		return
+	}
+	if !strings.Contains(resource, "/") {
+		prefix, err := coveringPrefixForIP(resource)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+		resource = prefix
+	}
+	raw := mustFetch(fmt.Sprintf("%s/address-space-hierarchy/data.json?resource=%s", ripeBase, resource))
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchIPAddressSpaceInfo", raw)
 }
@@ -299,8 +323,19 @@ func fetchASPathInfo(in *bufio.Reader) {
 }
 
 func fetchIPAddressBlockInfo(in *bufio.Reader) {
-	ip := readLine(in, "Enter IP: ")
-	raw := mustFetch(fmt.Sprintf("%s/address-blocks/data.json?resource=%s", ripeBase, ip))
+	resource := readLine(in, "Enter prefix or IP: ")
+	if resource == "" {
+		return
+	}
+	if !strings.Contains(resource, "/") {
+		prefix, err := coveringPrefixForIP(resource)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+		resource = prefix
+	}
+	raw := mustFetch(fmt.Sprintf("%s/address-space-usage/data.json?resource=%s", ripeBase, resource))
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchIPAddressBlockInfo", raw)
 }
@@ -367,15 +402,35 @@ func fetchRoutingConsistencyByIPAddressBlock(in *bufio.Reader) {
 }
 
 func fetchIPAddressHistory(in *bufio.Reader) {
-	ip := readLine(in, "Enter IP: ")
-	raw := mustFetch(fmt.Sprintf("%s/address-history/data.json?resource=%s", ripeBase, ip))
+	res := readLine(in, "Enter IP or prefix: ")
+	if res == "" {
+		return
+	}
+	start := normalizeTimeParam(readLine(in, "Enter start time (YYYY-MM-DD or RFC3339, blank = 1 year ago): "), time.Now().AddDate(-1, 0, 0))
+	endInput := readLine(in, "Enter end time (YYYY-MM-DD or RFC3339, blank = now): ")
+	params := fmt.Sprintf("%s/allocation-history/data.json?resource=%s&starttime=%s", ripeBase, res, url.QueryEscape(start))
+	if strings.TrimSpace(endInput) != "" {
+		end := normalizeTimeParam(endInput, time.Now())
+		params = fmt.Sprintf("%s&endtime=%s", params, url.QueryEscape(end))
+	}
+	raw := mustFetch(params)
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchIPAddressHistory", raw)
 }
 
 func fetchASNHistory(in *bufio.Reader) {
 	asn := normalizeASN(readLine(in, "Enter ASN: "))
-	raw := mustFetch(fmt.Sprintf("%s/asn-history/data.json?resource=%s", ripeBase, asn))
+	if asn == "" {
+		return
+	}
+	start := normalizeTimeParam(readLine(in, "Enter start time (YYYY-MM-DD or RFC3339, blank = 1 year ago): "), time.Now().AddDate(-1, 0, 0))
+	endInput := readLine(in, "Enter end time (YYYY-MM-DD or RFC3339, blank = now): ")
+	params := fmt.Sprintf("%s/allocation-history/data.json?resource=%s&starttime=%s", ripeBase, asn, url.QueryEscape(start))
+	if strings.TrimSpace(endInput) != "" {
+		end := normalizeTimeParam(endInput, time.Now())
+		params = fmt.Sprintf("%s&endtime=%s", params, url.QueryEscape(end))
+	}
+	raw := mustFetch(params)
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchASNHistory", raw)
 }
@@ -463,6 +518,20 @@ func coveringPrefixForIP(ip string) (string, error) {
 		return "", fmt.Errorf("no prefix found")
 	}
 	return parsed.Data.Prefix, nil
+}
+
+func normalizeTimeParam(input string, fallback time.Time) string {
+	s := strings.TrimSpace(input)
+	if s == "" {
+		return fallback.Format(time.RFC3339)
+	}
+	if t, err := time.Parse(time.RFC3339, s); err == nil {
+		return t.Format(time.RFC3339)
+	}
+	if t, err := time.Parse("2006-01-02", s); err == nil {
+		return t.Format(time.RFC3339)
+	}
+	return s
 }
 
 func writeToFile(testName string, raw []byte) {
