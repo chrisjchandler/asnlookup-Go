@@ -96,10 +96,15 @@ func main() {
 		fmt.Println("22. Fetch routing consistency for a given IP address block (CIDR)")
 		fmt.Println("23. Fetch allocation history for a given IP address or prefix")
 		fmt.Println("24. Fetch allocation history for a given ASN")
-		fmt.Println("25. Exit")
-		fmt.Println("26. Derive originating ASN(s) from an IP or prefix (CIDR)")
+		fmt.Println("25. Derive originating ASN(s) from an IP or prefix (CIDR)")
+		fmt.Println("26. Fetch AS overview for a given ASN")
+		fmt.Println("27. Fetch prefix overview for a given prefix or IP")
+		fmt.Println("28. Fetch whois information for an IP/Prefix/ASN")
+		fmt.Println("29. Fetch RPKI validation status for an ASN and prefix")
+		fmt.Println("30. Fetch visibility information for an IP/Prefix/ASN")
+		fmt.Println("31. Exit")
 
-		choice, ok := readInt(in, "Enter choice (1-26): ")
+		choice, ok := readInt(in, "Enter choice (1-31): ")
 		if !ok {
 			return
 		}
@@ -154,9 +159,19 @@ func main() {
 		case 24:
 			fetchASNHistory(in)
 		case 25:
-			return
-		case 26:
 			deriveASNFromIPOrPrefix(in)
+		case 26:
+			fetchASOverview(in)
+		case 27:
+			fetchPrefixOverview(in)
+		case 28:
+			fetchWhois(in)
+		case 29:
+			fetchRPKIValidation(in)
+		case 30:
+			fetchVisibility(in)
+		case 31:
+			return
 		default:
 			fmt.Println("Invalid choice.")
 		}
@@ -234,6 +249,67 @@ func deriveASNFromIPOrPrefix(in *bufio.Reader) {
 	raw := mustFetch(url)
 	fmt.Println(prettyJSON(raw))
 	writeToFile("deriveASNFromIPOrPrefix", raw)
+}
+
+func fetchASOverview(in *bufio.Reader) {
+	asn := normalizeASN(readLine(in, "Enter ASN: "))
+	if asn == "" {
+		return
+	}
+	raw := mustFetch(fmt.Sprintf("%s/as-overview/data.json?resource=%s", ripeBase, asn))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchASOverview", raw)
+}
+
+func fetchPrefixOverview(in *bufio.Reader) {
+	resource := readLine(in, "Enter prefix or IP: ")
+	prefix, err := prefixResource(resource)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	raw := mustFetch(fmt.Sprintf("%s/prefix-overview/data.json?resource=%s", ripeBase, prefix))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchPrefixOverview", raw)
+}
+
+func fetchWhois(in *bufio.Reader) {
+	resource := normalizeASN(readLine(in, "Enter IP/Prefix/ASN: "))
+	if resource == "" {
+		return
+	}
+	raw := mustFetch(fmt.Sprintf("%s/whois/data.json?resource=%s", ripeBase, resource))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchWhois", raw)
+}
+
+func fetchRPKIValidation(in *bufio.Reader) {
+	asn := normalizeASN(readLine(in, "Enter ASN: "))
+	if asn == "" {
+		return
+	}
+	resource := readLine(in, "Enter prefix or IP: ")
+	prefix, err := prefixResource(resource)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	params := url.Values{}
+	params.Set("resource", asn)
+	params.Set("prefix", prefix)
+	raw := mustFetch(fmt.Sprintf("%s/rpki-validation/data.json?%s", ripeBase, params.Encode()))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchRPKIValidation", raw)
+}
+
+func fetchVisibility(in *bufio.Reader) {
+	resource := normalizeASN(readLine(in, "Enter IP/Prefix/ASN: "))
+	if resource == "" {
+		return
+	}
+	raw := mustFetch(fmt.Sprintf("%s/visibility/data.json?resource=%s", ripeBase, resource))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchVisibility", raw)
 }
 
 func fetchRoutingHistory(in *bufio.Reader) {
@@ -518,6 +594,17 @@ func coveringPrefixForIP(ip string) (string, error) {
 		return "", fmt.Errorf("no prefix found")
 	}
 	return parsed.Data.Prefix, nil
+}
+
+func prefixResource(resource string) (string, error) {
+	resource = strings.TrimSpace(resource)
+	if resource == "" {
+		return "", fmt.Errorf("resource is required")
+	}
+	if strings.Contains(resource, "/") {
+		return resource, nil
+	}
+	return coveringPrefixForIP(resource)
 }
 
 func normalizeTimeParam(input string, fallback time.Time) string {

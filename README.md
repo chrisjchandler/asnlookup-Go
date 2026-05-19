@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Go-based tool provides a command-line interface for querying ASN information using the RIPE Stat API. It includes functionalities for looking up ASN and organization names by IP address, fetching current and historical neighbor ASNs, and much more.
+This Go-based tool provides a command-line interface for querying ASN, prefix, and IP information using the RIPEstat API. It includes current and historical routing views, registry lookups, abuse and whois queries, and routing security checks.
 
 ## Prerequisites
 
@@ -20,72 +20,53 @@ After compiling the Go program, you can run it to access its functionalities. He
 
 1. **Run the Program**: Open a terminal and navigate to the directory containing the compiled program. Run it by typing `./asnlookup` if on Unix/Linux/MacOS or `asnlookup.exe` if on Windows.
 
-2. **Choose an Option**: The program will prompt you with multiple options:
+2. **Choose an Option**: The program will prompt you with the following options:
 
-    1. Look up ASN and organization name by IP address
-    2. Fetch neighbor ASNs for a given ASN
-    3. Fetch historical neighbor ASNs for a given ASN
-    4. Get Abuse contact information for an IP
-    5. Get Historical whois change count for an IP Address
-    6. Fetch routing history for a given ASN
-    7. Fetch prefix information for a given ASN
-    8. Fetch BGP updates for a given ASN
-    9. Fetch geolocation information for a given IP address
-    10. Fetch reverse DNS information for a given IP address
-    11. Fetch network information for a given IP address
-    12. Fetch blacklist information for a given IP address
-    13. Fetch IP address space information for a given ASN
-    14. Fetch AS path information for a given ASN
-    15. Fetch IP address block information for a given IP address
-    16. Fetch routing status for a given IP address
-    17. Fetch routing consistency for a given ASN
-    18. Fetch routing status for a given ASN
-    19. Fetch routing consistency for a given IP address
-    20. Fetch routing status for a given prefix
-    21. Fetch routing consistency for a given prefix
-    22. Fetch routing status for a given IP address block
-    23. Fetch routing consistency for a given IP address block
-    24. Fetch IP address history for a given IP address
-    25. Fetch ASN history for a given ASN
-    26. Exit
+    1. Fetch neighbor ASNs for a given ASN
+    2. Fetch historical neighbor ASNs for a given ASN
+    3. Get Abuse contact information for an IP/Prefix/ASN
+    4. Get Historical whois change count for an IP/Prefix/ASN
+    5. Fetch routing history for a given ASN/Prefix/IP
+    6. Fetch prefix information for a given ASN
+    7. Fetch BGP updates for a given ASN
+    8. Fetch geolocation information for a given IP address
+    9. Fetch reverse DNS information for a given IP address
+    10. Fetch network information for a given IP address
+    11. Fetch blacklist information for a given IP address
+    12. Fetch IP address space hierarchy for a given prefix or IP
+    13. Fetch AS path information for a given ASN
+    14. Fetch address space usage for a given prefix or IP
+    15. Fetch routing status for a given IP address
+    16. Fetch routing consistency for a given ASN
+    17. Fetch routing status for a given ASN
+    18. Fetch routing consistency for a given IP address
+    19. Fetch routing status for a given prefix
+    20. Fetch routing consistency for a given prefix
+    21. Fetch routing status for a given IP address block (CIDR)
+    22. Fetch routing consistency for a given IP address block (CIDR)
+    23. Fetch allocation history for a given IP address or prefix
+    24. Fetch allocation history for a given ASN
+    25. Derive originating ASN(s) from an IP or prefix (CIDR)
+    26. Fetch AS overview for a given ASN
+    27. Fetch prefix overview for a given prefix or IP
+    28. Fetch whois information for an IP/Prefix/ASN
+    29. Fetch RPKI validation status for an ASN and prefix
+    30. Fetch visibility information for an IP/Prefix/ASN
+    31. Exit
 
 3. **Enter the Required Information**:
 
-    - For option 1, you will be prompted to enter an IP address.
-    - For options 2, 3, 6, 7, 8, 13, 14, 17, and 18, you will be prompted to enter an ASN.
-    - For options 4, 9, 10, 11, 12, 15, 16, 19, and 20, you will be prompted to enter an IP address.
-    - For options 21 and 22, you will be prompted to enter a prefix.
-    - For options 23, 24, and 25, you will be prompted to enter an IP address block.
+    - ASN-focused options prompt for an ASN and accept either `AS12345` or `12345`.
+    - Prefix-focused options accept either a CIDR prefix directly or an IP address, which is resolved to its covering prefix when required.
+    - Mixed lookup options accept an IP, prefix, or ASN depending on the RIPEstat endpoint being queried.
 
 4. **View the Results**: The program will display the queried information directly in the terminal and give you an option to save the output to a JSON file.
 
 ```sh
 $ ./asnlookup
 Choose an option:
-    1. Look up ASN and organization name by IP address
-    2. Fetch neighbor ASNs for a given ASN
-    3. Fetch historical neighbor ASNs for a given ASN
-    4. Get Abuse contact information for an IP
-    5. Get Historical whois change count for an IP Address
-    6. Fetch routing history for a given ASN
-    7. Fetch prefix information for a given ASN
-    8. Fetch BGP updates for a given ASN
-    9. Fetch geolocation information for a given IP address
-    10. Fetch reverse DNS information for a given IP address
-    11. Fetch network information for a given IP address
-    12. Fetch blacklist information for a given IP address
-    13. Fetch IP address space information for a given ASN
-    14. Fetch AS path information for a given ASN
-    15. Fetch IP address block information for a given IP address
-    16. Fetch routing status for a given IP address
-    17. Fetch routing consistency for a given ASN
-    18. Fetch routing status for a given ASN
-    19. Fetch routing consistency for a given IP address
-    20. Fetch routing status for a given prefix
-    21. Fetch routing consistency for a given prefix
-    22. Fetch routing status for a given IP address block
-    23. Fetch routing consistency for a given IP address block
-    24. Fetch IP address history for a given IP address
-    25. Fetch ASN history for a given ASN
-    26. Exit
-
+    1. Fetch neighbor ASNs for a given ASN
+    ...
+    29. Fetch RPKI validation status for an ASN and prefix
+    30. Fetch visibility information for an IP/Prefix/ASN
+    31. Exit

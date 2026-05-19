@@ -1,0 +1,3688 @@
+{
+  "data": {
+    "messages": [
+      [
+        "info",
+        "Query time has been set to latest time data is available for (2026-05-19 08:00 UTC)"
+      ]
+    ],
+    "see_also": [],
+    "version": "4.1",
+    "data_call_name": "visibility",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260519120542-b0b9a7db-f5f1-4702-84f0-6bd6e552a73b",
+    "process_time": 141,
+    "server_id": "app185",
+    "build_version": "v0.10.1-2026.05.18",
+    "pipeline": "1270547",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-05-19T12:05:42.218276",
+    "data": {
+      "visibilities": [
+        {
+          "probe": {
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "longitude": 5.00953,
+            "latitude": 55.6565,
+            "name": "RRC00",
+            "ipv4_peer_count": 63,
+            "ipv6_peer_count": 46,
+            "ixp": "RIPE-NCC Multihop"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 13830,
+              "ip": "161.129.152.2",
+              "prefix_count": 1037185
+            },
+            {
+              "asn": 1403,
+              "ip": "198.58.198.252",
+              "prefix_count": 1052896
+            },
+            {
+              "asn": 14907,
+              "ip": "208.80.153.193",
+              "prefix_count": 1039200
+            },
+            {
+              "asn": 15562,
+              "ip": "165.254.255.2",
+              "prefix_count": 1037032
+            },
+            {
+              "asn": 17639,
+              "ip": "202.69.160.152",
+              "prefix_count": 1058570
+            },
+            {
+              "asn": 20205,
+              "ip": "64.246.96.5",
+              "prefix_count": 1062122
+            },
+            {
+              "asn": 202365,
+              "ip": "5.255.90.109",
+              "prefix_count": 1047221
+            },
+            {
+              "asn": 204092,
+              "ip": "89.234.186.6",
+              "prefix_count": 1087381
+            },
+            {
+              "asn": 20514,
+              "ip": "217.151.205.147",
+              "prefix_count": 1037705
+            },
+            {
+              "asn": 206499,
+              "ip": "45.14.68.69",
+              "prefix_count": 1041159
+            },
+            {
+              "asn": 216285,
+              "ip": "84.54.49.1",
+              "prefix_count": 1040341
+            },
+            {
+              "asn": 22652,
+              "ip": "45.61.0.85",
+              "prefix_count": 1039809
+            },
+            {
+              "asn": 24482,
+              "ip": "203.175.175.15",
+              "prefix_count": 1065388
+            },
+            {
+              "asn": 29504,
+              "ip": "185.193.84.191",
+              "prefix_count": 1044235
+            },
+            {
+              "asn": 328840,
+              "ip": "102.208.105.2",
+              "prefix_count": 1032330
+            },
+            {
+              "asn": 3333,
+              "ip": "193.0.0.56",
+              "prefix_count": 1045245
+            },
+            {
+              "asn": 34549,
+              "ip": "80.77.16.114",
+              "prefix_count": 1041158
+            },
+            {
+              "asn": 34800,
+              "ip": "193.163.86.231",
+              "prefix_count": 1047200
+            },
+            {
+              "asn": 34927,
+              "ip": "193.148.251.1",
+              "prefix_count": 1042195
+            },
+            {
+              "asn": 34927,
+              "ip": "45.134.89.1",
+              "prefix_count": 1064555
+            },
+            {
+              "asn": 3549,
+              "ip": "208.51.134.248",
+              "prefix_count": 1037049
+            },
+            {
+              "asn": 38001,
+              "ip": "202.150.221.37",
+              "prefix_count": 1047539
+            },
+            {
+              "asn": 44393,
+              "ip": "49.12.70.222",
+              "prefix_count": 1072767
+            },
+            {
+              "asn": 45049,
+              "ip": "194.28.97.2",
+              "prefix_count": 1038624
+            },
+            {
+              "asn": 4608,
+              "ip": "203.119.104.1",
+              "prefix_count": 1046968
+            },
+            {
+              "asn": 48185,
+              "ip": "195.90.96.2",
+              "prefix_count": 1038803
+            },
+            {
+              "asn": 49134,
+              "ip": "23.129.32.61",
+              "prefix_count": 1062306
+            },
+            {
+              "asn": 49432,
+              "ip": "195.128.231.254",
+              "prefix_count": 1042666
+            },
+            {
+              "asn": 49673,
+              "ip": "94.247.111.254",
+              "prefix_count": 1073394
+            },
+            {
+              "asn": 50300,
+              "ip": "176.12.110.8",
+              "prefix_count": 1040987
+            },
+            {
+              "asn": 50304,
+              "ip": "31.169.49.228",
+              "prefix_count": 1037992
+            },
+            {
+              "asn": 50628,
+              "ip": "178.208.11.4",
+              "prefix_count": 1078861
+            },
+            {
+              "asn": 55720,
+              "ip": "103.212.68.10",
+              "prefix_count": 1064849
+            },
+            {
+              "asn": 55720,
+              "ip": "45.116.179.212",
+              "prefix_count": 1046487
+            },
+            {
+              "asn": 57381,
+              "ip": "193.150.22.240",
+              "prefix_count": 1038769
+            },
+            {
+              "asn": 57821,
+              "ip": "193.160.39.1",
+              "prefix_count": 1037592
+            },
+            {
+              "asn": 58057,
+              "ip": "193.33.94.251",
+              "prefix_count": 1039905
+            },
+            {
+              "asn": 58057,
+              "ip": "194.50.92.251",
+              "prefix_count": 1041156
+            },
+            {
+              "asn": 59919,
+              "ip": "5.178.95.254",
+              "prefix_count": 1042158
+            },
+            {
+              "asn": 61218,
+              "ip": "185.102.84.232",
+              "prefix_count": 1059527
+            },
+            {
+              "asn": 7018,
+              "ip": "12.0.1.63",
+              "prefix_count": 1035684
+            },
+            {
+              "asn": 852,
+              "ip": "154.11.12.212",
+              "prefix_count": 1038732
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 1403,
+              "ip": "198.58.198.252",
+              "prefix_count": 240496
+            },
+            {
+              "asn": 1403,
+              "ip": "2606:6d00:eb0::252",
+              "prefix_count": 240496
+            },
+            {
+              "asn": 14907,
+              "ip": "2620:0:860:ffff::2",
+              "prefix_count": 240192
+            },
+            {
+              "asn": 15562,
+              "ip": "2001:728:1808::2",
+              "prefix_count": 233061
+            },
+            {
+              "asn": 17639,
+              "ip": "2405:3200:0:23::",
+              "prefix_count": 247270
+            },
+            {
+              "asn": 20205,
+              "ip": "2001:4950::5",
+              "prefix_count": 240683
+            },
+            {
+              "asn": 202365,
+              "ip": "2a00:1ca8:2a::e0",
+              "prefix_count": 246940
+            },
+            {
+              "asn": 204092,
+              "ip": "2a00:5884::6",
+              "prefix_count": 252598
+            },
+            {
+              "asn": 213241,
+              "ip": "89.42.52.8",
+              "prefix_count": 229362
+            },
+            {
+              "asn": 216285,
+              "ip": "2a14:4280:1:1::1",
+              "prefix_count": 240888
+            },
+            {
+              "asn": 22652,
+              "ip": "2607:fad8::1:9",
+              "prefix_count": 233648
+            },
+            {
+              "asn": 24482,
+              "ip": "2405:4200:100::15",
+              "prefix_count": 244314
+            },
+            {
+              "asn": 29504,
+              "ip": "2a0a:3640:0:d::191",
+              "prefix_count": 244614
+            },
+            {
+              "asn": 3333,
+              "ip": "193.0.0.56",
+              "prefix_count": 246635
+            },
+            {
+              "asn": 34549,
+              "ip": "2a01:360:0:6::2",
+              "prefix_count": 237845
+            },
+            {
+              "asn": 34800,
+              "ip": "2a04:ccc2:0:c232::63fe",
+              "prefix_count": 238296
+            },
+            {
+              "asn": 34800,
+              "ip": "2a09:4c0:500:c1a3::56e7",
+              "prefix_count": 246847
+            },
+            {
+              "asn": 34927,
+              "ip": "2a0c:9a40:1009::1",
+              "prefix_count": 240689
+            },
+            {
+              "asn": 34927,
+              "ip": "2a0c:9a40:1038::1",
+              "prefix_count": 239799
+            },
+            {
+              "asn": 37721,
+              "ip": "165.16.221.66",
+              "prefix_count": 243208
+            },
+            {
+              "asn": 37721,
+              "ip": "2c0f:ee00::98:210",
+              "prefix_count": 243209
+            },
+            {
+              "asn": 38001,
+              "ip": "2406:f400:8:34::1",
+              "prefix_count": 242711
+            },
+            {
+              "asn": 44393,
+              "ip": "2a01:4f8:c17:ec87::310c:46de",
+              "prefix_count": 249814
+            },
+            {
+              "asn": 45049,
+              "ip": "2a0c:b641:400::1",
+              "prefix_count": 233627
+            },
+            {
+              "asn": 48185,
+              "ip": "2a02:2b8::195:90:96:2",
+              "prefix_count": 240110
+            },
+            {
+              "asn": 49432,
+              "ip": "2001:678:118c:ffff::254",
+              "prefix_count": 238547
+            },
+            {
+              "asn": 50300,
+              "ip": "2a00:1c10:10::8",
+              "prefix_count": 232862
+            },
+            {
+              "asn": 50304,
+              "ip": "2a02:20c8:1f::12",
+              "prefix_count": 240075
+            },
+            {
+              "asn": 50628,
+              "ip": "2a0b:3b00::4",
+              "prefix_count": 247998
+            },
+            {
+              "asn": 57381,
+              "ip": "2001:67c:24e4:240::1",
+              "prefix_count": 240439
+            },
+            {
+              "asn": 57821,
+              "ip": "2001:67c:26f4::1",
+              "prefix_count": 240161
+            },
+            {
+              "asn": 58057,
+              "ip": "2a09:4c0:100:c121::5efb",
+              "prefix_count": 237682
+            },
+            {
+              "asn": 58057,
+              "ip": "2a09:4c0:303:c232::5cfb",
+              "prefix_count": 244014
+            },
+            {
+              "asn": 61218,
+              "ip": "2a09:4c0:f00:b966::54e8",
+              "prefix_count": 243872
+            },
+            {
+              "asn": 7018,
+              "ip": "2001:1890:111d:1::63",
+              "prefix_count": 232832
+            },
+            {
+              "asn": 852,
+              "ip": "2001:56a:8002:12::3",
+              "prefix_count": 233898
+            }
+          ],
+          "ipv4_full_table_peer_count": 42,
+          "ipv6_full_table_peer_count": 36
+        },
+        {
+          "probe": {
+            "city": "London",
+            "country": "United Kingdom",
+            "longitude": -0.01915,
+            "latitude": 51.4969,
+            "name": "RRC01",
+            "ipv4_peer_count": 83,
+            "ipv6_peer_count": 61,
+            "ixp": "LINX / LONAP"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 12779,
+              "ip": "195.66.226.31",
+              "prefix_count": 1039748
+            },
+            {
+              "asn": 12969,
+              "ip": "195.66.226.232",
+              "prefix_count": 1038101
+            },
+            {
+              "asn": 1299,
+              "ip": "195.66.227.163",
+              "prefix_count": 1036623
+            },
+            {
+              "asn": 13030,
+              "ip": "195.66.224.175",
+              "prefix_count": 1038016
+            },
+            {
+              "asn": 14630,
+              "ip": "195.66.227.148",
+              "prefix_count": 1041642
+            },
+            {
+              "asn": 1828,
+              "ip": "195.66.224.81",
+              "prefix_count": 1050238
+            },
+            {
+              "asn": 207841,
+              "ip": "195.66.227.233",
+              "prefix_count": 1044582
+            },
+            {
+              "asn": 24482,
+              "ip": "195.66.226.38",
+              "prefix_count": 1050764
+            },
+            {
+              "asn": 25160,
+              "ip": "195.66.225.216",
+              "prefix_count": 1043418
+            },
+            {
+              "asn": 271253,
+              "ip": "195.66.231.56",
+              "prefix_count": 986598
+            },
+            {
+              "asn": 2914,
+              "ip": "195.66.224.138",
+              "prefix_count": 1037332
+            },
+            {
+              "asn": 3170,
+              "ip": "195.66.227.195",
+              "prefix_count": 1039907
+            },
+            {
+              "asn": 31742,
+              "ip": "5.57.81.210",
+              "prefix_count": 1038799
+            },
+            {
+              "asn": 3257,
+              "ip": "195.66.224.32",
+              "prefix_count": 1036964
+            },
+            {
+              "asn": 3320,
+              "ip": "195.66.224.137",
+              "prefix_count": 1035933
+            },
+            {
+              "asn": 3491,
+              "ip": "195.66.224.167",
+              "prefix_count": 1036863
+            },
+            {
+              "asn": 34927,
+              "ip": "195.66.227.105",
+              "prefix_count": 1037679
+            },
+            {
+              "asn": 35266,
+              "ip": "5.57.81.216",
+              "prefix_count": 1038740
+            },
+            {
+              "asn": 36924,
+              "ip": "5.57.81.76",
+              "prefix_count": 1079079
+            },
+            {
+              "asn": 39122,
+              "ip": "195.66.226.97",
+              "prefix_count": 1038771
+            },
+            {
+              "asn": 42473,
+              "ip": "195.66.226.113",
+              "prefix_count": 1039021
+            },
+            {
+              "asn": 48070,
+              "ip": "5.57.81.127",
+              "prefix_count": 1041118
+            },
+            {
+              "asn": 48185,
+              "ip": "195.66.226.193",
+              "prefix_count": 1038803
+            },
+            {
+              "asn": 62167,
+              "ip": "195.66.225.48",
+              "prefix_count": 1041980
+            },
+            {
+              "asn": 6461,
+              "ip": "195.66.224.76",
+              "prefix_count": 1037697
+            },
+            {
+              "asn": 6830,
+              "ip": "195.66.224.89",
+              "prefix_count": 1036490
+            },
+            {
+              "asn": 6894,
+              "ip": "5.57.81.186",
+              "prefix_count": 1048662
+            },
+            {
+              "asn": 6908,
+              "ip": "195.66.225.32",
+              "prefix_count": 1038468
+            },
+            {
+              "asn": 6908,
+              "ip": "5.57.81.21",
+              "prefix_count": 1038468
+            },
+            {
+              "asn": 8218,
+              "ip": "5.57.80.210",
+              "prefix_count": 1039779
+            },
+            {
+              "asn": 9002,
+              "ip": "195.66.224.193",
+              "prefix_count": 1041134
+            },
+            {
+              "asn": 917,
+              "ip": "5.57.81.231",
+              "prefix_count": 1044847
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 12779,
+              "ip": "2001:7f8:4::31eb:1",
+              "prefix_count": 237572
+            },
+            {
+              "asn": 1299,
+              "ip": "195.66.227.163",
+              "prefix_count": 233066
+            },
+            {
+              "asn": 13030,
+              "ip": "2001:7f8:4::32e6:1",
+              "prefix_count": 233378
+            },
+            {
+              "asn": 14630,
+              "ip": "2001:7f8:4::3926:1",
+              "prefix_count": 239899
+            },
+            {
+              "asn": 1828,
+              "ip": "2001:7f8:4::724:1",
+              "prefix_count": 242348
+            },
+            {
+              "asn": 207841,
+              "ip": "2001:7f8:4::3:2be1:1",
+              "prefix_count": 243225
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:4::5fa2:1",
+              "prefix_count": 239014
+            },
+            {
+              "asn": 25160,
+              "ip": "2001:7f8:4::6248:1",
+              "prefix_count": 239694
+            },
+            {
+              "asn": 271253,
+              "ip": "2001:7f8:4::4:2395:1",
+              "prefix_count": 231657
+            },
+            {
+              "asn": 2914,
+              "ip": "2001:7f8:4::b62:1",
+              "prefix_count": 233279
+            },
+            {
+              "asn": 31122,
+              "ip": "2001:7f8:4::7992:1",
+              "prefix_count": 237198
+            },
+            {
+              "asn": 3170,
+              "ip": "2001:7f8:4::c62:1",
+              "prefix_count": 234424
+            },
+            {
+              "asn": 31742,
+              "ip": "2001:7f8:17::7bfe:1",
+              "prefix_count": 240715
+            },
+            {
+              "asn": 3257,
+              "ip": "2001:7f8:4::cb9:1",
+              "prefix_count": 233050
+            },
+            {
+              "asn": 3491,
+              "ip": "2001:7f8:4::da3:1",
+              "prefix_count": 233320
+            },
+            {
+              "asn": 34927,
+              "ip": "2001:7f8:4::886f:1",
+              "prefix_count": 246495
+            },
+            {
+              "asn": 35266,
+              "ip": "2001:7f8:17::89c2:1",
+              "prefix_count": 233732
+            },
+            {
+              "asn": 36924,
+              "ip": "2001:7f8:17::903c:1",
+              "prefix_count": 248225
+            },
+            {
+              "asn": 39122,
+              "ip": "2001:7f8:4::98d2:1",
+              "prefix_count": 240069
+            },
+            {
+              "asn": 42473,
+              "ip": "2001:7f8:4::a5e9:1",
+              "prefix_count": 237810
+            },
+            {
+              "asn": 48070,
+              "ip": "2001:7f8:17::bbc6:1",
+              "prefix_count": 243002
+            },
+            {
+              "asn": 48185,
+              "ip": "2001:7f8:4::bc39:2",
+              "prefix_count": 240113
+            },
+            {
+              "asn": 62167,
+              "ip": "2001:7f8:4::f2d7:1",
+              "prefix_count": 242631
+            },
+            {
+              "asn": 6424,
+              "ip": "2001:7f8:4::1918:1",
+              "prefix_count": 221222
+            },
+            {
+              "asn": 6461,
+              "ip": "2001:7f8:4::193d:1",
+              "prefix_count": 235805
+            },
+            {
+              "asn": 6830,
+              "ip": "2001:7f8:4::1aae:4",
+              "prefix_count": 234899
+            },
+            {
+              "asn": 6894,
+              "ip": "2001:7f8:17::1aee:1",
+              "prefix_count": 228528
+            },
+            {
+              "asn": 6908,
+              "ip": "2001:7f8:17::1afc:1",
+              "prefix_count": 233823
+            },
+            {
+              "asn": 6908,
+              "ip": "2001:7f8:4::1afc:1",
+              "prefix_count": 233823
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:7f8:4::1b1b:1",
+              "prefix_count": 235755
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8:17::201a:1",
+              "prefix_count": 239766
+            },
+            {
+              "asn": 9002,
+              "ip": "2001:7f8:4::232a:1",
+              "prefix_count": 237823
+            },
+            {
+              "asn": 917,
+              "ip": "2001:7f8:17::395:1",
+              "prefix_count": 242859
+            }
+          ],
+          "ipv4_full_table_peer_count": 32,
+          "ipv6_full_table_peer_count": 33
+        },
+        {
+          "probe": {
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "longitude": 4.95081,
+            "latitude": 52.3563,
+            "name": "RRC03",
+            "ipv4_peer_count": 87,
+            "ipv6_peer_count": 66,
+            "ixp": "AMS-IX / NL-IX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 1103,
+              "ip": "80.249.208.34",
+              "prefix_count": 1043051
+            },
+            {
+              "asn": 12859,
+              "ip": "80.249.208.200",
+              "prefix_count": 1040014
+            },
+            {
+              "asn": 12956,
+              "ip": "80.249.208.208",
+              "prefix_count": 1036970
+            },
+            {
+              "asn": 14907,
+              "ip": "80.249.209.176",
+              "prefix_count": 1041861
+            },
+            {
+              "asn": 199524,
+              "ip": "80.249.210.150",
+              "prefix_count": 1041160
+            },
+            {
+              "asn": 199938,
+              "ip": "80.249.211.237",
+              "prefix_count": 1042427
+            },
+            {
+              "asn": 205206,
+              "ip": "193.239.117.18",
+              "prefix_count": 1045015
+            },
+            {
+              "asn": 212635,
+              "ip": "193.239.117.55",
+              "prefix_count": 1046080
+            },
+            {
+              "asn": 24482,
+              "ip": "80.249.210.153",
+              "prefix_count": 1050763
+            },
+            {
+              "asn": 25160,
+              "ip": "80.249.210.85",
+              "prefix_count": 1043418
+            },
+            {
+              "asn": 3320,
+              "ip": "80.249.209.211",
+              "prefix_count": 1035926
+            },
+            {
+              "asn": 34019,
+              "ip": "80.249.210.134",
+              "prefix_count": 1087471
+            },
+            {
+              "asn": 39351,
+              "ip": "80.249.213.131",
+              "prefix_count": 1029490
+            },
+            {
+              "asn": 42541,
+              "ip": "193.239.118.106",
+              "prefix_count": 1039331
+            },
+            {
+              "asn": 47147,
+              "ip": "80.249.213.102",
+              "prefix_count": 1040433
+            },
+            {
+              "asn": 48185,
+              "ip": "193.239.119.253",
+              "prefix_count": 1038803
+            },
+            {
+              "asn": 49544,
+              "ip": "80.249.208.162",
+              "prefix_count": 1055867
+            },
+            {
+              "asn": 50629,
+              "ip": "80.249.212.10",
+              "prefix_count": 1039238
+            },
+            {
+              "asn": 51088,
+              "ip": "80.249.208.209",
+              "prefix_count": 1039021
+            },
+            {
+              "asn": 6453,
+              "ip": "80.249.209.167",
+              "prefix_count": 1036948
+            },
+            {
+              "asn": 6461,
+              "ip": "80.249.208.122",
+              "prefix_count": 1037697
+            },
+            {
+              "asn": 6830,
+              "ip": "80.249.208.106",
+              "prefix_count": 1036506
+            },
+            {
+              "asn": 8218,
+              "ip": "80.249.209.53",
+              "prefix_count": 1039778
+            },
+            {
+              "asn": 8455,
+              "ip": "80.249.211.217",
+              "prefix_count": 1038959
+            },
+            {
+              "asn": 8529,
+              "ip": "80.249.210.78",
+              "prefix_count": 1048203
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 1103,
+              "ip": "2001:7f8:1::a500:1103:2",
+              "prefix_count": 236186
+            },
+            {
+              "asn": 1140,
+              "ip": "2001:7f8:1::a500:1140:1",
+              "prefix_count": 235776
+            },
+            {
+              "asn": 1273,
+              "ip": "2001:7f8:1::a500:1273:1",
+              "prefix_count": 232984
+            },
+            {
+              "asn": 12859,
+              "ip": "2001:7f8:1::a501:2859:1",
+              "prefix_count": 237368
+            },
+            {
+              "asn": 12859,
+              "ip": "2001:7f8:1::a501:2859:2",
+              "prefix_count": 237370
+            },
+            {
+              "asn": 12956,
+              "ip": "2001:7f8:1::a501:2956:1",
+              "prefix_count": 233038
+            },
+            {
+              "asn": 14907,
+              "ip": "2001:7f8:1::a501:4907:1",
+              "prefix_count": 245653
+            },
+            {
+              "asn": 199938,
+              "ip": "2001:7f8:1:0:a500:19:9938:1",
+              "prefix_count": 244088
+            },
+            {
+              "asn": 212635,
+              "ip": "2001:7f8:13::a521:2635:1",
+              "prefix_count": 247339
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:1::a502:4482:1",
+              "prefix_count": 239013
+            },
+            {
+              "asn": 25160,
+              "ip": "2001:7f8:1::a502:5160:1",
+              "prefix_count": 239688
+            },
+            {
+              "asn": 3214,
+              "ip": "2001:7f8:1::a500:3214:1",
+              "prefix_count": 243715
+            },
+            {
+              "asn": 34019,
+              "ip": "2001:7f8:1::a503:4019:1",
+              "prefix_count": 252278
+            },
+            {
+              "asn": 39351,
+              "ip": "2001:7f8:1::a503:9351:1",
+              "prefix_count": 237737
+            },
+            {
+              "asn": 42541,
+              "ip": "2001:7f8:13::a504:2541:1",
+              "prefix_count": 244073
+            },
+            {
+              "asn": 47147,
+              "ip": "2001:7f8:1::a504:7147:1",
+              "prefix_count": 237777
+            },
+            {
+              "asn": 48185,
+              "ip": "2001:7f8:13::a504:8185:1",
+              "prefix_count": 240111
+            },
+            {
+              "asn": 49544,
+              "ip": "2001:7f8:1::a504:9544:1",
+              "prefix_count": 241793
+            },
+            {
+              "asn": 50629,
+              "ip": "2001:7f8:1::a505:629:1",
+              "prefix_count": 234007
+            },
+            {
+              "asn": 50673,
+              "ip": "2001:7f8:1::a505:673:1",
+              "prefix_count": 241697
+            },
+            {
+              "asn": 50763,
+              "ip": "2001:7f8:1::a505:763:1",
+              "prefix_count": 235767
+            },
+            {
+              "asn": 51088,
+              "ip": "2001:7f8:1::a505:1088:1",
+              "prefix_count": 234108
+            },
+            {
+              "asn": 60326,
+              "ip": "2001:7f8:13::a506:326:1",
+              "prefix_count": 246159
+            },
+            {
+              "asn": 6453,
+              "ip": "2001:7f8:1::a500:6453:1",
+              "prefix_count": 233704
+            },
+            {
+              "asn": 6461,
+              "ip": "2001:7f8:1::a500:6461:1",
+              "prefix_count": 235808
+            },
+            {
+              "asn": 6830,
+              "ip": "2001:7f8:1::a500:6830:2",
+              "prefix_count": 234898
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:7f8:1::a500:6939:1",
+              "prefix_count": 235820
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8:1::a500:8218:2",
+              "prefix_count": 239767
+            },
+            {
+              "asn": 8455,
+              "ip": "2001:7f8:1::a500:8455:1",
+              "prefix_count": 233629
+            },
+            {
+              "asn": 8529,
+              "ip": "2001:7f8:1::a500:8529:2",
+              "prefix_count": 238366
+            }
+          ],
+          "ipv4_full_table_peer_count": 25,
+          "ipv6_full_table_peer_count": 30
+        },
+        {
+          "probe": {
+            "city": "Geneva",
+            "country": "Switzerland",
+            "longitude": 6.05255,
+            "latitude": 46.234,
+            "name": "RRC04",
+            "ipv4_peer_count": 13,
+            "ipv6_peer_count": 9,
+            "ixp": "CIXP"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 12350,
+              "ip": "192.65.185.157",
+              "prefix_count": 1041167
+            },
+            {
+              "asn": 15547,
+              "ip": "192.65.185.195",
+              "prefix_count": 1063898
+            },
+            {
+              "asn": 20932,
+              "ip": "192.65.185.142",
+              "prefix_count": 1039698
+            },
+            {
+              "asn": 25091,
+              "ip": "192.65.185.244",
+              "prefix_count": 1043437
+            },
+            {
+              "asn": 29222,
+              "ip": "192.65.185.140",
+              "prefix_count": 1062197
+            },
+            {
+              "asn": 513,
+              "ip": "192.65.185.3",
+              "prefix_count": 1066080
+            },
+            {
+              "asn": 6730,
+              "ip": "192.65.185.141",
+              "prefix_count": 1036218
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 15547,
+              "ip": "2001:7f8:1c:24a::3cbb:1",
+              "prefix_count": 244024
+            },
+            {
+              "asn": 20932,
+              "ip": "2001:7f8:1c:24a::51c4:1",
+              "prefix_count": 243717
+            },
+            {
+              "asn": 29222,
+              "ip": "2001:7f8:1c:24a::7226:1",
+              "prefix_count": 244038
+            },
+            {
+              "asn": 513,
+              "ip": "2001:7f8:1c:24a::201:1",
+              "prefix_count": 247023
+            },
+            {
+              "asn": 6730,
+              "ip": "2001:7f8:1c:24a::1a4a:1",
+              "prefix_count": 228902
+            }
+          ],
+          "ipv4_full_table_peer_count": 7,
+          "ipv6_full_table_peer_count": 5
+        },
+        {
+          "probe": {
+            "city": "Vienna",
+            "country": "Austria",
+            "longitude": 16.3575,
+            "latitude": 48.214,
+            "name": "RRC05",
+            "ipv4_peer_count": 42,
+            "ipv6_peer_count": 28,
+            "ixp": "VIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 13237,
+              "ip": "193.203.0.91",
+              "prefix_count": 1042347
+            },
+            {
+              "asn": 31510,
+              "ip": "193.203.0.145",
+              "prefix_count": 1040652
+            },
+            {
+              "asn": 35369,
+              "ip": "193.203.0.157",
+              "prefix_count": 1042785
+            },
+            {
+              "asn": 40994,
+              "ip": "193.203.0.75",
+              "prefix_count": 1038379
+            },
+            {
+              "asn": 47147,
+              "ip": "193.203.0.19",
+              "prefix_count": 1040433
+            },
+            {
+              "asn": 47692,
+              "ip": "193.203.0.192",
+              "prefix_count": 1046936
+            },
+            {
+              "asn": 48362,
+              "ip": "193.203.0.182",
+              "prefix_count": 1042676
+            },
+            {
+              "asn": 51184,
+              "ip": "193.203.0.213",
+              "prefix_count": 1046894
+            },
+            {
+              "asn": 59890,
+              "ip": "193.203.0.245",
+              "prefix_count": 1064387
+            },
+            {
+              "asn": 6720,
+              "ip": "193.203.0.63",
+              "prefix_count": 1063140
+            },
+            {
+              "asn": 8218,
+              "ip": "193.203.0.45",
+              "prefix_count": 1039781
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 13030,
+              "ip": "2001:7f8:30:0:2:1:1:3030",
+              "prefix_count": 233381
+            },
+            {
+              "asn": 31510,
+              "ip": "2001:7f8:30:0:2:1:3:1510",
+              "prefix_count": 238050
+            },
+            {
+              "asn": 35369,
+              "ip": "2001:7f8:30:0:2:1:3:5369",
+              "prefix_count": 241065
+            },
+            {
+              "asn": 40994,
+              "ip": "2001:7f8:30:0:2:1:4:994",
+              "prefix_count": 233490
+            },
+            {
+              "asn": 47147,
+              "ip": "2001:7f8:30:0:1:1:4:7147",
+              "prefix_count": 237915
+            },
+            {
+              "asn": 47692,
+              "ip": "2001:7f8:30:0:2:1:4:7692",
+              "prefix_count": 244147
+            },
+            {
+              "asn": 48362,
+              "ip": "2001:7f8:30:0:2:1:4:8362",
+              "prefix_count": 238547
+            },
+            {
+              "asn": 51184,
+              "ip": "2001:7f8:30:0:2:1:5:1184",
+              "prefix_count": 244091
+            },
+            {
+              "asn": 59890,
+              "ip": "2001:7f8:30:0:2:1:5:9890",
+              "prefix_count": 246212
+            },
+            {
+              "asn": 6720,
+              "ip": "2001:7f8:30:0:1:1:0:6720",
+              "prefix_count": 244201
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:7f8:30:0:2:1:0:6939",
+              "prefix_count": 235815
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8:30:0:1:1:0:8218",
+              "prefix_count": 239768
+            }
+          ],
+          "ipv4_full_table_peer_count": 11,
+          "ipv6_full_table_peer_count": 12
+        },
+        {
+          "probe": {
+            "city": "Tokyo",
+            "country": "Japan",
+            "longitude": 139.769,
+            "latitude": 35.6845,
+            "name": "RRC06",
+            "ipv4_peer_count": 12,
+            "ipv6_peer_count": 10,
+            "ixp": "DIX-IE / JPIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 2497,
+              "ip": "202.249.2.169",
+              "prefix_count": 1043344
+            },
+            {
+              "asn": 2500,
+              "ip": "202.249.2.83",
+              "prefix_count": 1044974
+            },
+            {
+              "asn": 25152,
+              "ip": "202.249.2.185",
+              "prefix_count": 1065654
+            },
+            {
+              "asn": 4777,
+              "ip": "202.249.2.20",
+              "prefix_count": 1051029
+            },
+            {
+              "asn": 59105,
+              "ip": "210.171.225.165",
+              "prefix_count": 1052115
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 2497,
+              "ip": "2001:200:0:fe00::9c1:0",
+              "prefix_count": 236745
+            },
+            {
+              "asn": 2500,
+              "ip": "2001:200:0:fe00::9c4:11",
+              "prefix_count": 234394
+            },
+            {
+              "asn": 25152,
+              "ip": "2001:200:0:fe00::6249:0",
+              "prefix_count": 246869
+            },
+            {
+              "asn": 4777,
+              "ip": "2001:200:0:fe00::12a9:0",
+              "prefix_count": 236885
+            },
+            {
+              "asn": 59105,
+              "ip": "2001:de8:8::5:9105:1",
+              "prefix_count": 250098
+            }
+          ],
+          "ipv4_full_table_peer_count": 5,
+          "ipv6_full_table_peer_count": 5
+        },
+        {
+          "probe": {
+            "city": "Stockholm",
+            "country": "Sweden",
+            "longitude": 18.0657,
+            "latitude": 59.3177,
+            "name": "RRC07",
+            "ipv4_peer_count": 22,
+            "ipv6_peer_count": 17,
+            "ixp": "Netnod"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 199524,
+              "ip": "194.68.123.191",
+              "prefix_count": 1037109
+            },
+            {
+              "asn": 24482,
+              "ip": "194.68.123.226",
+              "prefix_count": 1050762
+            },
+            {
+              "asn": 3399,
+              "ip": "194.68.123.57",
+              "prefix_count": 1037946
+            },
+            {
+              "asn": 35280,
+              "ip": "194.68.123.96",
+              "prefix_count": 1078527
+            },
+            {
+              "asn": 42473,
+              "ip": "194.68.123.18",
+              "prefix_count": 1038203
+            },
+            {
+              "asn": 51519,
+              "ip": "194.68.123.69",
+              "prefix_count": 1029513
+            },
+            {
+              "asn": 6667,
+              "ip": "194.68.123.136",
+              "prefix_count": 1038155
+            },
+            {
+              "asn": 9002,
+              "ip": "194.68.123.157",
+              "prefix_count": 1041132
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 199524,
+              "ip": "2001:7f8:d:ff::191",
+              "prefix_count": 240137
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:d:ff::226",
+              "prefix_count": 239012
+            },
+            {
+              "asn": 3399,
+              "ip": "2001:7f8:d:ff::57",
+              "prefix_count": 233545
+            },
+            {
+              "asn": 35280,
+              "ip": "2001:7f8:d:ff::96",
+              "prefix_count": 247833
+            },
+            {
+              "asn": 42473,
+              "ip": "2001:7f8:d:ff::18",
+              "prefix_count": 237819
+            },
+            {
+              "asn": 51519,
+              "ip": "2001:7f8:d:ff::69",
+              "prefix_count": 243876
+            },
+            {
+              "asn": 6667,
+              "ip": "2001:7f8:d:ff::136",
+              "prefix_count": 233672
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:7f8:d:ff::187",
+              "prefix_count": 235756
+            },
+            {
+              "asn": 9002,
+              "ip": "2001:7f8:d:ff::157",
+              "prefix_count": 237823
+            }
+          ],
+          "ipv4_full_table_peer_count": 8,
+          "ipv6_full_table_peer_count": 9
+        },
+        {
+          "probe": {
+            "city": "Milan",
+            "country": "Italy",
+            "longitude": 9.10271,
+            "latitude": 45.4786,
+            "name": "RRC10",
+            "ipv4_peer_count": 34,
+            "ipv6_peer_count": 28,
+            "ixp": "MIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 12637,
+              "ip": "217.29.66.86",
+              "prefix_count": 1037115
+            },
+            {
+              "asn": 12779,
+              "ip": "217.29.66.65",
+              "prefix_count": 1039750
+            },
+            {
+              "asn": 15605,
+              "ip": "217.29.66.120",
+              "prefix_count": 1040681
+            },
+            {
+              "asn": 20811,
+              "ip": "217.29.66.88",
+              "prefix_count": 1040215
+            },
+            {
+              "asn": 20912,
+              "ip": "217.29.67.54",
+              "prefix_count": 1039285
+            },
+            {
+              "asn": 24482,
+              "ip": "217.29.66.158",
+              "prefix_count": 1050765
+            },
+            {
+              "asn": 41327,
+              "ip": "217.29.67.51",
+              "prefix_count": 1042206
+            },
+            {
+              "asn": 49605,
+              "ip": "217.29.66.127",
+              "prefix_count": 1038901
+            },
+            {
+              "asn": 50877,
+              "ip": "217.29.66.225",
+              "prefix_count": 1046438
+            },
+            {
+              "asn": 51185,
+              "ip": "217.29.66.102",
+              "prefix_count": 1038110
+            },
+            {
+              "asn": 5392,
+              "ip": "217.29.66.5",
+              "prefix_count": 1046789
+            },
+            {
+              "asn": 5394,
+              "ip": "217.29.66.12",
+              "prefix_count": 1037820
+            },
+            {
+              "asn": 57111,
+              "ip": "217.29.67.13",
+              "prefix_count": 1043376
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 12637,
+              "ip": "2001:7f8:b:100:1d1:a5d1:2637:86",
+              "prefix_count": 243764
+            },
+            {
+              "asn": 12779,
+              "ip": "2001:7f8:b:100:1d1:a5d1:2779:65",
+              "prefix_count": 237774
+            },
+            {
+              "asn": 15605,
+              "ip": "2001:7f8:b:100:1d1:a5d1:5605:120",
+              "prefix_count": 246509
+            },
+            {
+              "asn": 202032,
+              "ip": "2001:7f8:b:100:1d1:a520:2032:192",
+              "prefix_count": 235814
+            },
+            {
+              "asn": 20811,
+              "ip": "2001:7f8:b:100:1d1:a5d2:811:88",
+              "prefix_count": 237251
+            },
+            {
+              "asn": 20912,
+              "ip": "2001:7f8:b:100:1d1:a5d2:912:54",
+              "prefix_count": 244093
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:b:100:1d1:a5d2:4482:158",
+              "prefix_count": 239012
+            },
+            {
+              "asn": 41327,
+              "ip": "2001:7f8:b:100:1d1:a5d4:1327:51",
+              "prefix_count": 234406
+            },
+            {
+              "asn": 49605,
+              "ip": "2001:7f8:b:100:1d1:a5d4:9605:127",
+              "prefix_count": 232878
+            },
+            {
+              "asn": 50877,
+              "ip": "2001:7f8:b:100:1d1:a5d5:877:225",
+              "prefix_count": 244309
+            },
+            {
+              "asn": 5394,
+              "ip": "2001:7f8:b:100:1d1:a5d0:5394:12",
+              "prefix_count": 233303
+            },
+            {
+              "asn": 57111,
+              "ip": "2001:7f8:b:100:1d1:a5d5:7111:13",
+              "prefix_count": 240665
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:7f8:b:100:1d1:a5d0:6939:125",
+              "prefix_count": 235820
+            }
+          ],
+          "ipv4_full_table_peer_count": 13,
+          "ipv6_full_table_peer_count": 13
+        },
+        {
+          "probe": {
+            "city": "New York City",
+            "country": "US",
+            "longitude": -74.0135,
+            "latitude": 40.7058,
+            "name": "RRC11",
+            "ipv4_peer_count": 24,
+            "ipv6_peer_count": 19,
+            "ixp": "NYIIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 19151,
+              "ip": "198.32.160.137",
+              "prefix_count": 1043673
+            },
+            {
+              "asn": 199524,
+              "ip": "198.32.160.12",
+              "prefix_count": 1038246
+            },
+            {
+              "asn": 21700,
+              "ip": "198.32.160.58",
+              "prefix_count": 1037706
+            },
+            {
+              "asn": 24482,
+              "ip": "198.32.160.242",
+              "prefix_count": 1050765
+            },
+            {
+              "asn": 2497,
+              "ip": "198.32.160.42",
+              "prefix_count": 1043339
+            },
+            {
+              "asn": 9002,
+              "ip": "198.32.160.182",
+              "prefix_count": 1041135
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 19151,
+              "ip": "2001:504:1::a501:9151:1",
+              "prefix_count": 234232
+            },
+            {
+              "asn": 199524,
+              "ip": "2001:504:1::a519:9524:1",
+              "prefix_count": 234060
+            },
+            {
+              "asn": 21700,
+              "ip": "2001:504:1::a502:1700:1",
+              "prefix_count": 240103
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:504:1::a502:4482:1",
+              "prefix_count": 239014
+            },
+            {
+              "asn": 2497,
+              "ip": "2001:504:1::a500:2497:1",
+              "prefix_count": 236736
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:504:1::a500:6939:1",
+              "prefix_count": 235675
+            },
+            {
+              "asn": 9002,
+              "ip": "2001:504:1::a500:9002:1",
+              "prefix_count": 237822
+            }
+          ],
+          "ipv4_full_table_peer_count": 6,
+          "ipv6_full_table_peer_count": 7
+        },
+        {
+          "probe": {
+            "city": "Frankfurt",
+            "country": "Germany",
+            "longitude": 8.70401,
+            "latitude": 50.1124,
+            "name": "RRC12",
+            "ipv4_peer_count": 81,
+            "ipv6_peer_count": 69,
+            "ixp": "DE-CIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 12779,
+              "ip": "80.81.194.186",
+              "prefix_count": 1039752
+            },
+            {
+              "asn": 199524,
+              "ip": "80.81.193.252",
+              "prefix_count": 1042958
+            },
+            {
+              "asn": 205112,
+              "ip": "80.81.194.45",
+              "prefix_count": 1041881
+            },
+            {
+              "asn": 206356,
+              "ip": "80.81.195.178",
+              "prefix_count": 1041575
+            },
+            {
+              "asn": 210937,
+              "ip": "80.81.197.27",
+              "prefix_count": 1038839
+            },
+            {
+              "asn": 213151,
+              "ip": "80.81.196.225",
+              "prefix_count": 1063181
+            },
+            {
+              "asn": 21412,
+              "ip": "80.81.196.189",
+              "prefix_count": 1063653
+            },
+            {
+              "asn": 24482,
+              "ip": "80.81.193.18",
+              "prefix_count": 1050842
+            },
+            {
+              "asn": 24961,
+              "ip": "80.81.192.162",
+              "prefix_count": 1041370
+            },
+            {
+              "asn": 25220,
+              "ip": "80.81.194.140",
+              "prefix_count": 1046976
+            },
+            {
+              "asn": 29140,
+              "ip": "80.81.194.59",
+              "prefix_count": 1040295
+            },
+            {
+              "asn": 2914,
+              "ip": "80.81.192.46",
+              "prefix_count": 1037335
+            },
+            {
+              "asn": 3257,
+              "ip": "80.81.196.110",
+              "prefix_count": 1036963
+            },
+            {
+              "asn": 34019,
+              "ip": "80.81.193.145",
+              "prefix_count": 1087470
+            },
+            {
+              "asn": 34288,
+              "ip": "80.81.194.119",
+              "prefix_count": 1048144
+            },
+            {
+              "asn": 34927,
+              "ip": "80.81.196.156",
+              "prefix_count": 1045769
+            },
+            {
+              "asn": 35710,
+              "ip": "80.81.195.35",
+              "prefix_count": 1064027
+            },
+            {
+              "asn": 47147,
+              "ip": "80.81.195.166",
+              "prefix_count": 1040228
+            },
+            {
+              "asn": 47692,
+              "ip": "80.81.194.100",
+              "prefix_count": 1046887
+            },
+            {
+              "asn": 48362,
+              "ip": "80.81.193.139",
+              "prefix_count": 1042676
+            },
+            {
+              "asn": 48919,
+              "ip": "80.81.193.194",
+              "prefix_count": 1061204
+            },
+            {
+              "asn": 50629,
+              "ip": "80.81.194.240",
+              "prefix_count": 1039238
+            },
+            {
+              "asn": 51184,
+              "ip": "80.81.193.65",
+              "prefix_count": 1046894
+            },
+            {
+              "asn": 51185,
+              "ip": "80.81.195.143",
+              "prefix_count": 1042725
+            },
+            {
+              "asn": 553,
+              "ip": "80.81.192.175",
+              "prefix_count": 1040138
+            },
+            {
+              "asn": 58057,
+              "ip": "80.81.195.219",
+              "prefix_count": 1041173
+            },
+            {
+              "asn": 58299,
+              "ip": "80.81.196.197",
+              "prefix_count": 1063843
+            },
+            {
+              "asn": 64475,
+              "ip": "80.81.195.171",
+              "prefix_count": 1041857
+            },
+            {
+              "asn": 6461,
+              "ip": "80.81.194.26",
+              "prefix_count": 1037698
+            },
+            {
+              "asn": 6762,
+              "ip": "80.81.192.194",
+              "prefix_count": 1037448
+            },
+            {
+              "asn": 680,
+              "ip": "80.81.192.222",
+              "prefix_count": 1039248
+            },
+            {
+              "asn": 8218,
+              "ip": "80.81.192.13",
+              "prefix_count": 1039780
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 12779,
+              "ip": "2001:7f8::31eb:0:1",
+              "prefix_count": 237564
+            },
+            {
+              "asn": 206356,
+              "ip": "2001:7f8::3:2614:0:1",
+              "prefix_count": 234081
+            },
+            {
+              "asn": 210937,
+              "ip": "2001:7f8::3:37f9:0:1",
+              "prefix_count": 243508
+            },
+            {
+              "asn": 213151,
+              "ip": "2001:7f8::3:409f:0:1",
+              "prefix_count": 247206
+            },
+            {
+              "asn": 21412,
+              "ip": "2001:7f8::53a4:0:1",
+              "prefix_count": 244431
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8::5fa2:0:1",
+              "prefix_count": 239037
+            },
+            {
+              "asn": 24961,
+              "ip": "2001:7f8::6181:0:1",
+              "prefix_count": 238505
+            },
+            {
+              "asn": 25220,
+              "ip": "2001:7f8::6284:0:1",
+              "prefix_count": 244066
+            },
+            {
+              "asn": 29140,
+              "ip": "2001:7f8::71d4:0:1",
+              "prefix_count": 243593
+            },
+            {
+              "asn": 2914,
+              "ip": "2001:7f8::b62:0:1",
+              "prefix_count": 233277
+            },
+            {
+              "asn": 3257,
+              "ip": "2001:7f8::cb9:0:3",
+              "prefix_count": 233050
+            },
+            {
+              "asn": 34019,
+              "ip": "2001:7f8::84e3:0:1",
+              "prefix_count": 252277
+            },
+            {
+              "asn": 34288,
+              "ip": "2001:7f8::85f0:0:1",
+              "prefix_count": 247108
+            },
+            {
+              "asn": 34927,
+              "ip": "2001:7f8::886f:0:1",
+              "prefix_count": 245265
+            },
+            {
+              "asn": 35710,
+              "ip": "2001:7f8::8b7e:0:1",
+              "prefix_count": 243648
+            },
+            {
+              "asn": 47147,
+              "ip": "2001:7f8::a5e9:0:3",
+              "prefix_count": 237899
+            },
+            {
+              "asn": 47692,
+              "ip": "2001:7f8::ba4c:0:1",
+              "prefix_count": 244147
+            },
+            {
+              "asn": 48362,
+              "ip": "2001:7f8::bcea:0:1",
+              "prefix_count": 238547
+            },
+            {
+              "asn": 48919,
+              "ip": "2001:7f8::bf17:0:2",
+              "prefix_count": 243935
+            },
+            {
+              "asn": 50629,
+              "ip": "2001:7f8::c5c5:0:1",
+              "prefix_count": 234008
+            },
+            {
+              "asn": 51184,
+              "ip": "2001:7f8::c7f0:0:1",
+              "prefix_count": 244091
+            },
+            {
+              "asn": 553,
+              "ip": "2001:7f8::229:0:1",
+              "prefix_count": 237423
+            },
+            {
+              "asn": 58057,
+              "ip": "2001:7f8::e2c9:0:1",
+              "prefix_count": 244006
+            },
+            {
+              "asn": 58299,
+              "ip": "2001:7f8::e3bb:0:1",
+              "prefix_count": 247308
+            },
+            {
+              "asn": 64475,
+              "ip": "2001:7f8::fbdb:0:1",
+              "prefix_count": 238469
+            },
+            {
+              "asn": 6461,
+              "ip": "2001:7f8::193d:0:1",
+              "prefix_count": 235811
+            },
+            {
+              "asn": 6667,
+              "ip": "2001:7f8::1a0b:0:1",
+              "prefix_count": 233672
+            },
+            {
+              "asn": 6762,
+              "ip": "2001:7f8::1a6a:0:1",
+              "prefix_count": 233386
+            },
+            {
+              "asn": 680,
+              "ip": "2001:7f8::2a8:0:1",
+              "prefix_count": 233847
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:7f8::1b1b:0:1",
+              "prefix_count": 235821
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8::201a:0:1",
+              "prefix_count": 239769
+            },
+            {
+              "asn": 9002,
+              "ip": "2001:7f8::232a:0:1",
+              "prefix_count": 237823
+            }
+          ],
+          "ipv4_full_table_peer_count": 32,
+          "ipv6_full_table_peer_count": 32
+        },
+        {
+          "probe": {
+            "city": "Moscow",
+            "country": "Russian Federation",
+            "longitude": 37.5949,
+            "latitude": 55.7101,
+            "name": "RRC13",
+            "ipv4_peer_count": 15,
+            "ipv6_peer_count": 13,
+            "ixp": "MSK-IX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 20764,
+              "ip": "195.208.208.223",
+              "prefix_count": 1045944
+            },
+            {
+              "asn": 24482,
+              "ip": "195.208.209.109",
+              "prefix_count": 1050842
+            },
+            {
+              "asn": 28917,
+              "ip": "195.208.208.147",
+              "prefix_count": 1040594
+            },
+            {
+              "asn": 35598,
+              "ip": "195.208.209.66",
+              "prefix_count": 1068287
+            },
+            {
+              "asn": 41722,
+              "ip": "195.208.210.52",
+              "prefix_count": 1047705
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 20764,
+              "ip": "2001:7f8:20:101::208:223",
+              "prefix_count": 237981
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:20:101::209:109",
+              "prefix_count": 239037
+            },
+            {
+              "asn": 28917,
+              "ip": "195.208.208.147",
+              "prefix_count": 243888
+            },
+            {
+              "asn": 28917,
+              "ip": "2001:7f8:20:101::208:147",
+              "prefix_count": 243868
+            },
+            {
+              "asn": 41722,
+              "ip": "2001:7f8:20:101::210:52",
+              "prefix_count": 244969
+            }
+          ],
+          "ipv4_full_table_peer_count": 5,
+          "ipv6_full_table_peer_count": 5
+        },
+        {
+          "probe": {
+            "city": "Palo Alto",
+            "country": "US",
+            "longitude": -122.161,
+            "latitude": 37.4457,
+            "name": "RRC14",
+            "ipv4_peer_count": 13,
+            "ipv6_peer_count": 10,
+            "ixp": "PAIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 1280,
+              "ip": "198.32.176.3",
+              "prefix_count": 1060686
+            },
+            {
+              "asn": 19151,
+              "ip": "198.32.176.164",
+              "prefix_count": 1043672
+            },
+            {
+              "asn": 199524,
+              "ip": "198.32.176.226",
+              "prefix_count": 1038282
+            },
+            {
+              "asn": 2914,
+              "ip": "198.32.176.14",
+              "prefix_count": 1037292
+            },
+            {
+              "asn": 6762,
+              "ip": "198.32.176.70",
+              "prefix_count": 1037495
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 1280,
+              "ip": "2001:504:d::1",
+              "prefix_count": 240216
+            },
+            {
+              "asn": 19151,
+              "ip": "2001:504:d::9151:1",
+              "prefix_count": 234520
+            },
+            {
+              "asn": 199524,
+              "ip": "2001:504:d::19:9524:1",
+              "prefix_count": 233970
+            },
+            {
+              "asn": 2914,
+              "ip": "2001:504:d::6",
+              "prefix_count": 233273
+            },
+            {
+              "asn": 6762,
+              "ip": "2001:504:d::46",
+              "prefix_count": 233410
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:504:d::10",
+              "prefix_count": 235685
+            }
+          ],
+          "ipv4_full_table_peer_count": 5,
+          "ipv6_full_table_peer_count": 6
+        },
+        {
+          "probe": {
+            "city": "Sao Paulo",
+            "country": "Brazil",
+            "longitude": -46.6947,
+            "latitude": -23.6002,
+            "name": "RRC15",
+            "ipv4_peer_count": 32,
+            "ipv6_peer_count": 27,
+            "ixp": "PTTMetro"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 13786,
+              "ip": "187.16.217.161",
+              "prefix_count": 1042900
+            },
+            {
+              "asn": 199524,
+              "ip": "187.16.222.229",
+              "prefix_count": 1049921
+            },
+            {
+              "asn": 24482,
+              "ip": "187.16.208.144",
+              "prefix_count": 1060391
+            },
+            {
+              "asn": 262427,
+              "ip": "187.16.223.70",
+              "prefix_count": 1069059
+            },
+            {
+              "asn": 263152,
+              "ip": "187.16.222.107",
+              "prefix_count": 1057098
+            },
+            {
+              "asn": 263237,
+              "ip": "187.16.222.45",
+              "prefix_count": 1068326
+            },
+            {
+              "asn": 264479,
+              "ip": "187.16.222.156",
+              "prefix_count": 1063859
+            },
+            {
+              "asn": 271253,
+              "ip": "187.16.209.243",
+              "prefix_count": 1047364
+            },
+            {
+              "asn": 271253,
+              "ip": "187.16.209.34",
+              "prefix_count": 1043475
+            },
+            {
+              "asn": 28634,
+              "ip": "187.16.216.209",
+              "prefix_count": 1073499
+            },
+            {
+              "asn": 35280,
+              "ip": "187.16.217.122",
+              "prefix_count": 1078646
+            },
+            {
+              "asn": 52873,
+              "ip": "187.16.220.216",
+              "prefix_count": 1046853
+            },
+            {
+              "asn": 6424,
+              "ip": "187.16.213.225",
+              "prefix_count": 1049675
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 13786,
+              "ip": "2001:12f8::217:161",
+              "prefix_count": 240236
+            },
+            {
+              "asn": 199524,
+              "ip": "2001:12f8::222:229",
+              "prefix_count": 242396
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:12f8::208:144",
+              "prefix_count": 243305
+            },
+            {
+              "asn": 263152,
+              "ip": "2001:12f8::222:107",
+              "prefix_count": 242963
+            },
+            {
+              "asn": 263237,
+              "ip": "2001:12f8::222:45",
+              "prefix_count": 242241
+            },
+            {
+              "asn": 28624,
+              "ip": "2001:12f8::103",
+              "prefix_count": 249579
+            },
+            {
+              "asn": 35280,
+              "ip": "2001:12f8::217:122",
+              "prefix_count": 247973
+            },
+            {
+              "asn": 52873,
+              "ip": "2001:12f8::220:216",
+              "prefix_count": 237939
+            },
+            {
+              "asn": 60503,
+              "ip": "2001:12f8::214:32",
+              "prefix_count": 237375
+            },
+            {
+              "asn": 6424,
+              "ip": "2001:12f8::213:225",
+              "prefix_count": 238255
+            }
+          ],
+          "ipv4_full_table_peer_count": 13,
+          "ipv6_full_table_peer_count": 10
+        },
+        {
+          "probe": {
+            "city": "Miami",
+            "country": "US",
+            "longitude": -80.197731,
+            "latitude": 25.7748108,
+            "name": "RRC16",
+            "ipv4_peer_count": 15,
+            "ipv6_peer_count": 16,
+            "ixp": "NOTA"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 199524,
+              "ip": "198.32.243.133",
+              "prefix_count": 1040255
+            },
+            {
+              "asn": 20080,
+              "ip": "198.32.242.55",
+              "prefix_count": 1038111
+            },
+            {
+              "asn": 52320,
+              "ip": "198.32.242.254",
+              "prefix_count": 1041393
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 199524,
+              "ip": "2001:504:0:6:0:19:9524:1",
+              "prefix_count": 241270
+            },
+            {
+              "asn": 20080,
+              "ip": "2001:504:0:6:0:2:80:1",
+              "prefix_count": 239784
+            },
+            {
+              "asn": 52320,
+              "ip": "2001:504:0:6:0:5:2320:1",
+              "prefix_count": 237158
+            },
+            {
+              "asn": 6939,
+              "ip": "2001:504:0:6::6939:1",
+              "prefix_count": 235659
+            }
+          ],
+          "ipv4_full_table_peer_count": 3,
+          "ipv6_full_table_peer_count": 4
+        },
+        {
+          "probe": {
+            "city": "Barcelona",
+            "country": "Spain",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC18",
+            "ipv4_peer_count": 13,
+            "ipv6_peer_count": 11,
+            "ixp": "Catnix"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 29680,
+              "ip": "193.242.98.141",
+              "prefix_count": 1046700
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 29680,
+              "ip": "2001:7f8:2a:0:2:1:2:9680",
+              "prefix_count": 233997
+            }
+          ],
+          "ipv4_full_table_peer_count": 1,
+          "ipv6_full_table_peer_count": 1
+        },
+        {
+          "probe": {
+            "city": "Johannesburg",
+            "country": "South Africa",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC19",
+            "ipv4_peer_count": 38,
+            "ipv6_peer_count": 28,
+            "ixp": "NAP Africa JB"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 199524,
+              "ip": "196.60.9.188",
+              "prefix_count": 1045426
+            },
+            {
+              "asn": 32653,
+              "ip": "196.60.8.139",
+              "prefix_count": 1047304
+            },
+            {
+              "asn": 327804,
+              "ip": "196.60.8.221",
+              "prefix_count": 1052605
+            },
+            {
+              "asn": 327960,
+              "ip": "196.60.8.22",
+              "prefix_count": 1051470
+            },
+            {
+              "asn": 327983,
+              "ip": "196.60.8.44",
+              "prefix_count": 1041625
+            },
+            {
+              "asn": 3491,
+              "ip": "196.60.8.152",
+              "prefix_count": 1038930
+            },
+            {
+              "asn": 37239,
+              "ip": "196.60.8.190",
+              "prefix_count": 1057285
+            },
+            {
+              "asn": 917,
+              "ip": "196.60.9.165",
+              "prefix_count": 1047905
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 327804,
+              "ip": "2001:43f8:6d0::221",
+              "prefix_count": 240275
+            },
+            {
+              "asn": 327960,
+              "ip": "2001:43f8:6d0::22",
+              "prefix_count": 240245
+            },
+            {
+              "asn": 327983,
+              "ip": "2001:43f8:6d0::44",
+              "prefix_count": 240164
+            },
+            {
+              "asn": 328206,
+              "ip": "2001:43f8:6d0::9:66",
+              "prefix_count": 240206
+            },
+            {
+              "asn": 3491,
+              "ip": "2001:43f8:6d0::1b",
+              "prefix_count": 233522
+            },
+            {
+              "asn": 37497,
+              "ip": "2001:43f8:6d0::185",
+              "prefix_count": 233499
+            },
+            {
+              "asn": 917,
+              "ip": "2001:43f8:6d0::9:165",
+              "prefix_count": 247411
+            }
+          ],
+          "ipv4_full_table_peer_count": 8,
+          "ipv6_full_table_peer_count": 7
+        },
+        {
+          "probe": {
+            "city": "Zurich",
+            "country": "Switzerland",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC20",
+            "ipv4_peer_count": 31,
+            "ipv6_peer_count": 34,
+            "ixp": "SwissIX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 12307,
+              "ip": "91.206.52.68",
+              "prefix_count": 1065361
+            },
+            {
+              "asn": 15623,
+              "ip": "91.206.52.15",
+              "prefix_count": 1062150
+            },
+            {
+              "asn": 196621,
+              "ip": "91.206.52.103",
+              "prefix_count": 1063773
+            },
+            {
+              "asn": 198385,
+              "ip": "91.206.52.109",
+              "prefix_count": 1048427
+            },
+            {
+              "asn": 20612,
+              "ip": "91.206.52.126",
+              "prefix_count": 1065661
+            },
+            {
+              "asn": 20612,
+              "ip": "91.206.52.127",
+              "prefix_count": 1065661
+            },
+            {
+              "asn": 209823,
+              "ip": "91.206.53.6",
+              "prefix_count": 1045424
+            },
+            {
+              "asn": 21232,
+              "ip": "91.206.52.32",
+              "prefix_count": 1029094
+            },
+            {
+              "asn": 24482,
+              "ip": "91.206.52.205",
+              "prefix_count": 1050765
+            },
+            {
+              "asn": 25091,
+              "ip": "91.206.52.117",
+              "prefix_count": 1043612
+            },
+            {
+              "asn": 29691,
+              "ip": "91.206.52.9",
+              "prefix_count": 1064143
+            },
+            {
+              "asn": 47147,
+              "ip": "91.206.52.5",
+              "prefix_count": 1040443
+            },
+            {
+              "asn": 48362,
+              "ip": "91.206.52.40",
+              "prefix_count": 1042676
+            },
+            {
+              "asn": 51873,
+              "ip": "91.206.52.197",
+              "prefix_count": 1063194
+            },
+            {
+              "asn": 57777,
+              "ip": "91.206.53.35",
+              "prefix_count": 1030018
+            },
+            {
+              "asn": 58057,
+              "ip": "91.206.52.177",
+              "prefix_count": 1039021
+            },
+            {
+              "asn": 59414,
+              "ip": "91.206.52.90",
+              "prefix_count": 1061857
+            },
+            {
+              "asn": 59890,
+              "ip": "91.206.52.38",
+              "prefix_count": 1064388
+            },
+            {
+              "asn": 59891,
+              "ip": "91.206.52.141",
+              "prefix_count": 1064198
+            },
+            {
+              "asn": 62167,
+              "ip": "91.206.52.180",
+              "prefix_count": 1041982
+            },
+            {
+              "asn": 6461,
+              "ip": "91.206.52.115",
+              "prefix_count": 1037698
+            },
+            {
+              "asn": 8218,
+              "ip": "91.206.52.116",
+              "prefix_count": 1039782
+            },
+            {
+              "asn": 8298,
+              "ip": "91.206.53.12",
+              "prefix_count": 1064550
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 12307,
+              "ip": "2001:7f8:24::44",
+              "prefix_count": 246276
+            },
+            {
+              "asn": 15547,
+              "ip": "2001:7f8:24::95",
+              "prefix_count": 244023
+            },
+            {
+              "asn": 15623,
+              "ip": "2001:7f8:24::f",
+              "prefix_count": 245838
+            },
+            {
+              "asn": 196621,
+              "ip": "2001:7f8:24::67",
+              "prefix_count": 244107
+            },
+            {
+              "asn": 198249,
+              "ip": "2001:7f8:24::c7",
+              "prefix_count": 244016
+            },
+            {
+              "asn": 198385,
+              "ip": "2001:7f8:24::6d",
+              "prefix_count": 245008
+            },
+            {
+              "asn": 202032,
+              "ip": "2001:7f8:24::d8",
+              "prefix_count": 235766
+            },
+            {
+              "asn": 20612,
+              "ip": "2001:7f8:24::7e",
+              "prefix_count": 244535
+            },
+            {
+              "asn": 20612,
+              "ip": "2001:7f8:24::7f",
+              "prefix_count": 244535
+            },
+            {
+              "asn": 209823,
+              "ip": "2001:7f8:24:0:3:339f:0:1",
+              "prefix_count": 244839
+            },
+            {
+              "asn": 210312,
+              "ip": "2001:7f8:24::120",
+              "prefix_count": 246741
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:24::cd",
+              "prefix_count": 239012
+            },
+            {
+              "asn": 29691,
+              "ip": "2001:7f8:24::9",
+              "prefix_count": 246234
+            },
+            {
+              "asn": 47147,
+              "ip": "2001:7f8:24::5",
+              "prefix_count": 237915
+            },
+            {
+              "asn": 48362,
+              "ip": "2001:7f8:24::28",
+              "prefix_count": 238541
+            },
+            {
+              "asn": 51873,
+              "ip": "2001:7f8:24::c5",
+              "prefix_count": 246021
+            },
+            {
+              "asn": 57777,
+              "ip": "2001:7f8:24::123",
+              "prefix_count": 234366
+            },
+            {
+              "asn": 58057,
+              "ip": "2001:7f8:24::b1",
+              "prefix_count": 235759
+            },
+            {
+              "asn": 58057,
+              "ip": "91.206.52.177",
+              "prefix_count": 235761
+            },
+            {
+              "asn": 59414,
+              "ip": "2001:7f8:24::5a",
+              "prefix_count": 243867
+            },
+            {
+              "asn": 59890,
+              "ip": "2001:7f8:24::26",
+              "prefix_count": 246206
+            },
+            {
+              "asn": 59891,
+              "ip": "2001:7f8:24::8d",
+              "prefix_count": 244288
+            },
+            {
+              "asn": 62167,
+              "ip": "2001:7f8:24::b4",
+              "prefix_count": 242630
+            },
+            {
+              "asn": 6461,
+              "ip": "2001:7f8:24::73",
+              "prefix_count": 235810
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8:24::74",
+              "prefix_count": 239768
+            },
+            {
+              "asn": 8298,
+              "ip": "2001:7f8:24::10c",
+              "prefix_count": 246845
+            }
+          ],
+          "ipv4_full_table_peer_count": 23,
+          "ipv6_full_table_peer_count": 26
+        },
+        {
+          "probe": {
+            "city": "Paris",
+            "country": "France",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC21",
+            "ipv4_peer_count": 39,
+            "ipv6_peer_count": 38,
+            "ixp": "France-IX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 12779,
+              "ip": "37.49.236.177",
+              "prefix_count": 1039746
+            },
+            {
+              "asn": 14907,
+              "ip": "37.49.232.11",
+              "prefix_count": 1041831
+            },
+            {
+              "asn": 15547,
+              "ip": "37.49.236.156",
+              "prefix_count": 1063898
+            },
+            {
+              "asn": 16347,
+              "ip": "37.49.236.36",
+              "prefix_count": 1038170
+            },
+            {
+              "asn": 199524,
+              "ip": "37.49.237.175",
+              "prefix_count": 1037804
+            },
+            {
+              "asn": 2027,
+              "ip": "37.49.236.27",
+              "prefix_count": 1080772
+            },
+            {
+              "asn": 24482,
+              "ip": "37.49.236.228",
+              "prefix_count": 1050764
+            },
+            {
+              "asn": 25091,
+              "ip": "37.49.237.83",
+              "prefix_count": 1043599
+            },
+            {
+              "asn": 29075,
+              "ip": "37.49.236.205",
+              "prefix_count": 1041815
+            },
+            {
+              "asn": 34019,
+              "ip": "37.49.236.71",
+              "prefix_count": 1087128
+            },
+            {
+              "asn": 34177,
+              "ip": "37.49.236.32",
+              "prefix_count": 1041132
+            },
+            {
+              "asn": 35426,
+              "ip": "37.49.237.231",
+              "prefix_count": 1047826
+            },
+            {
+              "asn": 35600,
+              "ip": "37.49.236.55",
+              "prefix_count": 1040697
+            },
+            {
+              "asn": 49028,
+              "ip": "37.49.232.150",
+              "prefix_count": 1078843
+            },
+            {
+              "asn": 49434,
+              "ip": "37.49.236.249",
+              "prefix_count": 1042309
+            },
+            {
+              "asn": 50628,
+              "ip": "37.49.237.143",
+              "prefix_count": 1078872
+            },
+            {
+              "asn": 56987,
+              "ip": "37.49.237.198",
+              "prefix_count": 1042747
+            },
+            {
+              "asn": 58308,
+              "ip": "37.49.236.172",
+              "prefix_count": 1079058
+            },
+            {
+              "asn": 6461,
+              "ip": "37.49.237.180",
+              "prefix_count": 1037697
+            },
+            {
+              "asn": 8218,
+              "ip": "37.49.232.7",
+              "prefix_count": 1039780
+            },
+            {
+              "asn": 8218,
+              "ip": "37.49.236.1",
+              "prefix_count": 1039780
+            },
+            {
+              "asn": 8426,
+              "ip": "37.49.236.61",
+              "prefix_count": 1040177
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 12779,
+              "ip": "2001:7f8:54::177",
+              "prefix_count": 237767
+            },
+            {
+              "asn": 14907,
+              "ip": "2001:7f8:54:5::11",
+              "prefix_count": 243554
+            },
+            {
+              "asn": 15547,
+              "ip": "2001:7f8:54::156",
+              "prefix_count": 244024
+            },
+            {
+              "asn": 199524,
+              "ip": "2001:7f8:54::1:175",
+              "prefix_count": 240451
+            },
+            {
+              "asn": 2027,
+              "ip": "2001:7f8:54::27",
+              "prefix_count": 251292
+            },
+            {
+              "asn": 24482,
+              "ip": "2001:7f8:54::228",
+              "prefix_count": 239014
+            },
+            {
+              "asn": 29075,
+              "ip": "2001:7f8:54::205",
+              "prefix_count": 240766
+            },
+            {
+              "asn": 34019,
+              "ip": "2001:7f8:54::71",
+              "prefix_count": 252277
+            },
+            {
+              "asn": 34177,
+              "ip": "2001:7f8:54::32",
+              "prefix_count": 243948
+            },
+            {
+              "asn": 35426,
+              "ip": "2001:7f8:54::1:231",
+              "prefix_count": 246058
+            },
+            {
+              "asn": 35600,
+              "ip": "2001:7f8:54::55",
+              "prefix_count": 237560
+            },
+            {
+              "asn": 49028,
+              "ip": "2001:7f8:54:5::150",
+              "prefix_count": 247992
+            },
+            {
+              "asn": 49434,
+              "ip": "2001:7f8:54::249",
+              "prefix_count": 238577
+            },
+            {
+              "asn": 50628,
+              "ip": "2001:7f8:54::1:143",
+              "prefix_count": 247995
+            },
+            {
+              "asn": 56987,
+              "ip": "2001:7f8:54::1:198",
+              "prefix_count": 244332
+            },
+            {
+              "asn": 6461,
+              "ip": "2001:7f8:54::1:180",
+              "prefix_count": 235808
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8:54:5::7",
+              "prefix_count": 239768
+            },
+            {
+              "asn": 8218,
+              "ip": "2001:7f8:54::1",
+              "prefix_count": 239766
+            },
+            {
+              "asn": 8426,
+              "ip": "2001:7f8:54::61",
+              "prefix_count": 237310
+            }
+          ],
+          "ipv4_full_table_peer_count": 22,
+          "ipv6_full_table_peer_count": 19
+        },
+        {
+          "probe": {
+            "city": "Bucharest",
+            "country": "Romania",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC22",
+            "ipv4_peer_count": 17,
+            "ipv6_peer_count": 13,
+            "ixp": "InterLAN"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 31554,
+              "ip": "86.104.125.81",
+              "prefix_count": 1030178
+            },
+            {
+              "asn": 56430,
+              "ip": "86.104.125.59",
+              "prefix_count": 1068116
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 31554,
+              "ip": "2001:7f8:64:225:0:3:1554:1",
+              "prefix_count": 233915
+            },
+            {
+              "asn": 33823,
+              "ip": "2001:7f8:64:225:0:3:3823:1",
+              "prefix_count": 235846
+            },
+            {
+              "asn": 56430,
+              "ip": "2001:7f8:64:225:0:5:6430:1",
+              "prefix_count": 245394
+            }
+          ],
+          "ipv4_full_table_peer_count": 2,
+          "ipv6_full_table_peer_count": 3
+        },
+        {
+          "probe": {
+            "city": "Singapore",
+            "country": "Singapore",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC23",
+            "ipv4_peer_count": 31,
+            "ipv6_peer_count": 29,
+            "ixp": "Equinix SG"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 133210,
+              "ip": "27.111.230.35",
+              "prefix_count": 1048352
+            },
+            {
+              "asn": 14907,
+              "ip": "27.111.228.186",
+              "prefix_count": 1043705
+            },
+            {
+              "asn": 18106,
+              "ip": "27.111.228.6",
+              "prefix_count": 1065955
+            },
+            {
+              "asn": 199524,
+              "ip": "27.111.228.222",
+              "prefix_count": 1048430
+            },
+            {
+              "asn": 3491,
+              "ip": "27.111.228.43",
+              "prefix_count": 1037471
+            },
+            {
+              "asn": 35280,
+              "ip": "27.111.229.245",
+              "prefix_count": 1078572
+            },
+            {
+              "asn": 49544,
+              "ip": "27.111.229.225",
+              "prefix_count": 1045635
+            },
+            {
+              "asn": 9002,
+              "ip": "27.111.229.103",
+              "prefix_count": 1048160
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 133210,
+              "ip": "2001:de8:4::13:3210:1",
+              "prefix_count": 251279
+            },
+            {
+              "asn": 14907,
+              "ip": "2001:de8:4::1:4907:1",
+              "prefix_count": 243707
+            },
+            {
+              "asn": 18106,
+              "ip": "2001:de8:4::1:8106:1",
+              "prefix_count": 249688
+            },
+            {
+              "asn": 3491,
+              "ip": "2001:de8:4::3491:1",
+              "prefix_count": 233359
+            },
+            {
+              "asn": 35280,
+              "ip": "2001:de8:4::3:5280:1",
+              "prefix_count": 247955
+            },
+            {
+              "asn": 49544,
+              "ip": "2001:de8:4::4:9544:1",
+              "prefix_count": 237789
+            },
+            {
+              "asn": 9002,
+              "ip": "2001:de8:4::9002:1",
+              "prefix_count": 238867
+            }
+          ],
+          "ipv4_full_table_peer_count": 8,
+          "ipv6_full_table_peer_count": 7
+        },
+        {
+          "probe": {
+            "city": "Montevideo",
+            "country": "Uruguay",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC24",
+            "ipv4_peer_count": 14,
+            "ipv6_peer_count": 14,
+            "ixp": "LACNIC Multihop"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 14840,
+              "ip": "186.211.136.32",
+              "prefix_count": 1054086
+            },
+            {
+              "asn": 14840,
+              "ip": "186.211.184.34",
+              "prefix_count": 1053768
+            },
+            {
+              "asn": 264845,
+              "ip": "190.112.55.254",
+              "prefix_count": 1049810
+            },
+            {
+              "asn": 265721,
+              "ip": "45.65.244.1",
+              "prefix_count": 1039647
+            },
+            {
+              "asn": 46997,
+              "ip": "5.188.4.211",
+              "prefix_count": 1044540
+            },
+            {
+              "asn": 49544,
+              "ip": "185.197.24.1",
+              "prefix_count": 1036154
+            },
+            {
+              "asn": 49544,
+              "ip": "185.197.26.1",
+              "prefix_count": 1037615
+            },
+            {
+              "asn": 6057,
+              "ip": "200.40.162.202",
+              "prefix_count": 1050193
+            },
+            {
+              "asn": 61573,
+              "ip": "138.122.60.1",
+              "prefix_count": 1037411
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 14840,
+              "ip": "2804:a:c000:ffff::32",
+              "prefix_count": 243991
+            },
+            {
+              "asn": 14840,
+              "ip": "2804:b:0:ffff::34",
+              "prefix_count": 243987
+            },
+            {
+              "asn": 264845,
+              "ip": "2001:13c7:7020:300::254",
+              "prefix_count": 245803
+            },
+            {
+              "asn": 265721,
+              "ip": "2803:4dc0:50::1",
+              "prefix_count": 236021
+            },
+            {
+              "asn": 46997,
+              "ip": "2a03:90c0:186::11a",
+              "prefix_count": 238136
+            },
+            {
+              "asn": 49544,
+              "ip": "2a00:1d26:4001::1",
+              "prefix_count": 230915
+            },
+            {
+              "asn": 49544,
+              "ip": "2a00:1d26::1",
+              "prefix_count": 231236
+            },
+            {
+              "asn": 6057,
+              "ip": "2800:a0:401:c828:a2ca:2000:0:ca",
+              "prefix_count": 246236
+            },
+            {
+              "asn": 61573,
+              "ip": "138.122.60.1",
+              "prefix_count": 240744
+            },
+            {
+              "asn": 852,
+              "ip": "2001:56b:2:21::3",
+              "prefix_count": 233898
+            }
+          ],
+          "ipv4_full_table_peer_count": 9,
+          "ipv6_full_table_peer_count": 10
+        },
+        {
+          "probe": {
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC25",
+            "ipv4_peer_count": 62,
+            "ipv6_peer_count": 55,
+            "ixp": "RIPE-NCC Multihop"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 1257,
+              "ip": "91.129.0.46",
+              "prefix_count": 1039367
+            },
+            {
+              "asn": 1299,
+              "ip": "62.115.129.90",
+              "prefix_count": 1036625
+            },
+            {
+              "asn": 132847,
+              "ip": "103.74.171.30",
+              "prefix_count": 1043712
+            },
+            {
+              "asn": 134823,
+              "ip": "154.18.4.110",
+              "prefix_count": 1055610
+            },
+            {
+              "asn": 13781,
+              "ip": "66.255.243.37",
+              "prefix_count": 1038655
+            },
+            {
+              "asn": 142271,
+              "ip": "103.167.66.1",
+              "prefix_count": 1049531
+            },
+            {
+              "asn": 142289,
+              "ip": "103.75.161.246",
+              "prefix_count": 1051209
+            },
+            {
+              "asn": 14840,
+              "ip": "186.211.216.32",
+              "prefix_count": 1054081
+            },
+            {
+              "asn": 15397,
+              "ip": "79.143.96.61",
+              "prefix_count": 1045916
+            },
+            {
+              "asn": 197580,
+              "ip": "46.245.142.4",
+              "prefix_count": 1038134
+            },
+            {
+              "asn": 198150,
+              "ip": "46.8.37.63",
+              "prefix_count": 1050940
+            },
+            {
+              "asn": 207910,
+              "ip": "45.67.83.250",
+              "prefix_count": 1087510
+            },
+            {
+              "asn": 212271,
+              "ip": "152.89.170.250",
+              "prefix_count": 1060270
+            },
+            {
+              "asn": 21282,
+              "ip": "80.241.0.70",
+              "prefix_count": 1080607
+            },
+            {
+              "asn": 28824,
+              "ip": "185.115.244.25",
+              "prefix_count": 1041883
+            },
+            {
+              "asn": 28910,
+              "ip": "195.69.189.4",
+              "prefix_count": 1093822
+            },
+            {
+              "asn": 30950,
+              "ip": "193.28.236.32",
+              "prefix_count": 1037123
+            },
+            {
+              "asn": 31027,
+              "ip": "77.243.32.3",
+              "prefix_count": 1041575
+            },
+            {
+              "asn": 31027,
+              "ip": "77.243.32.58",
+              "prefix_count": 1041577
+            },
+            {
+              "asn": 3212,
+              "ip": "31.15.255.209",
+              "prefix_count": 1062556
+            },
+            {
+              "asn": 3214,
+              "ip": "185.255.53.202",
+              "prefix_count": 1048440
+            },
+            {
+              "asn": 328840,
+              "ip": "102.220.16.1",
+              "prefix_count": 1062742
+            },
+            {
+              "asn": 328840,
+              "ip": "102.220.17.28",
+              "prefix_count": 975658
+            },
+            {
+              "asn": 33874,
+              "ip": "159.20.30.1",
+              "prefix_count": 1037870
+            },
+            {
+              "asn": 34872,
+              "ip": "194.28.99.120",
+              "prefix_count": 1043873
+            },
+            {
+              "asn": 35710,
+              "ip": "91.132.202.2",
+              "prefix_count": 1064029
+            },
+            {
+              "asn": 36236,
+              "ip": "104.225.4.202",
+              "prefix_count": 1082735
+            },
+            {
+              "asn": 38008,
+              "ip": "103.152.35.254",
+              "prefix_count": 1044547
+            },
+            {
+              "asn": 394414,
+              "ip": "192.154.3.129",
+              "prefix_count": 954525
+            },
+            {
+              "asn": 44097,
+              "ip": "193.43.214.253",
+              "prefix_count": 1087697
+            },
+            {
+              "asn": 44901,
+              "ip": "185.205.208.5",
+              "prefix_count": 1061396
+            },
+            {
+              "asn": 45489,
+              "ip": "103.87.125.0",
+              "prefix_count": 1048156
+            },
+            {
+              "asn": 48678,
+              "ip": "149.3.171.245",
+              "prefix_count": 1049958
+            },
+            {
+              "asn": 49544,
+              "ip": "109.200.212.0",
+              "prefix_count": 1042833
+            },
+            {
+              "asn": 51185,
+              "ip": "178.248.51.149",
+              "prefix_count": 1070129
+            },
+            {
+              "asn": 56457,
+              "ip": "176.119.210.1",
+              "prefix_count": 1040159
+            },
+            {
+              "asn": 57187,
+              "ip": "94.207.42.2",
+              "prefix_count": 1064107
+            },
+            {
+              "asn": 61138,
+              "ip": "14.1.54.38",
+              "prefix_count": 1027605
+            },
+            {
+              "asn": 6881,
+              "ip": "93.190.135.253",
+              "prefix_count": 1062474
+            },
+            {
+              "asn": 835,
+              "ip": "23.159.16.22",
+              "prefix_count": 1038074
+            },
+            {
+              "asn": 8529,
+              "ip": "151.248.97.17",
+              "prefix_count": 1053144
+            },
+            {
+              "asn": 8888,
+              "ip": "146.19.145.216",
+              "prefix_count": 1053024
+            },
+            {
+              "asn": 924,
+              "ip": "185.121.168.42",
+              "prefix_count": 1047990
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 1257,
+              "ip": "2a00:800::37",
+              "prefix_count": 233735
+            },
+            {
+              "asn": 1299,
+              "ip": "62.115.129.90",
+              "prefix_count": 233066
+            },
+            {
+              "asn": 132847,
+              "ip": "2401:c240:0:2:103:74:171:30",
+              "prefix_count": 244217
+            },
+            {
+              "asn": 13781,
+              "ip": "2606:6dc0:1301::1",
+              "prefix_count": 236108
+            },
+            {
+              "asn": 142289,
+              "ip": "2a0e:46c4:2c11::1",
+              "prefix_count": 256841
+            },
+            {
+              "asn": 14840,
+              "ip": "2804:a:0:ffff::32",
+              "prefix_count": 243967
+            },
+            {
+              "asn": 197580,
+              "ip": "2a01:6320::172:16:0:3",
+              "prefix_count": 233408
+            },
+            {
+              "asn": 198150,
+              "ip": "2a13:9cc3::63",
+              "prefix_count": 244916
+            },
+            {
+              "asn": 206271,
+              "ip": "2001:67c:be4:1337::1337",
+              "prefix_count": 234490
+            },
+            {
+              "asn": 207301,
+              "ip": "2a0c:b641:780:7::feca",
+              "prefix_count": 248690
+            },
+            {
+              "asn": 207910,
+              "ip": "2001:678:984:b00b::250",
+              "prefix_count": 252602
+            },
+            {
+              "asn": 209718,
+              "ip": "2a0c:9a40:1070::315",
+              "prefix_count": 233401
+            },
+            {
+              "asn": 211509,
+              "ip": "2a06:a005:8:2::1",
+              "prefix_count": 247787
+            },
+            {
+              "asn": 212271,
+              "ip": "2a05:4140:3::250",
+              "prefix_count": 247368
+            },
+            {
+              "asn": 21282,
+              "ip": "2a01:7640::70",
+              "prefix_count": 251926
+            },
+            {
+              "asn": 28824,
+              "ip": "2001:4da8:f000::25",
+              "prefix_count": 245185
+            },
+            {
+              "asn": 28910,
+              "ip": "2a05:45c7:f000::4",
+              "prefix_count": 251575
+            },
+            {
+              "asn": 30950,
+              "ip": "2001:67c:324::32",
+              "prefix_count": 233528
+            },
+            {
+              "asn": 31027,
+              "ip": "2a02:188::11:68",
+              "prefix_count": 241110
+            },
+            {
+              "asn": 31027,
+              "ip": "2a02:188::11:90",
+              "prefix_count": 241109
+            },
+            {
+              "asn": 3212,
+              "ip": "2a00:fc0:3212:209::a",
+              "prefix_count": 244556
+            },
+            {
+              "asn": 3214,
+              "ip": "2a03:d9c0:c0de:c0de::1",
+              "prefix_count": 244397
+            },
+            {
+              "asn": 328840,
+              "ip": "2c0f:4e00:8000::2",
+              "prefix_count": 238513
+            },
+            {
+              "asn": 328840,
+              "ip": "2c0f:4e00::1",
+              "prefix_count": 226423
+            },
+            {
+              "asn": 33874,
+              "ip": "2a10:5500:1::1",
+              "prefix_count": 233298
+            },
+            {
+              "asn": 34872,
+              "ip": "2a0c:b640:ffff:0:28:99:112:120",
+              "prefix_count": 244936
+            },
+            {
+              "asn": 35710,
+              "ip": "2a09:d180::2",
+              "prefix_count": 243651
+            },
+            {
+              "asn": 36236,
+              "ip": "2607:fc50:2000:99::1eb",
+              "prefix_count": 259871
+            },
+            {
+              "asn": 38008,
+              "ip": "2406:4440::1",
+              "prefix_count": 238177
+            },
+            {
+              "asn": 44097,
+              "ip": "2001:67c:ec:253::1",
+              "prefix_count": 252272
+            },
+            {
+              "asn": 45489,
+              "ip": "2001:df4:1b00:6000::40",
+              "prefix_count": 248918
+            },
+            {
+              "asn": 49544,
+              "ip": "2a00:1632::",
+              "prefix_count": 237511
+            },
+            {
+              "asn": 51185,
+              "ip": "2a02:2891:9:200::13",
+              "prefix_count": 239033
+            },
+            {
+              "asn": 56457,
+              "ip": "2a06:5780:1::1",
+              "prefix_count": 240729
+            },
+            {
+              "asn": 61138,
+              "ip": "2401:7000:0:a6::2",
+              "prefix_count": 240789
+            },
+            {
+              "asn": 6881,
+              "ip": "2a02:38:ffff::2",
+              "prefix_count": 244471
+            },
+            {
+              "asn": 835,
+              "ip": "2602:fd50:0:bad::1",
+              "prefix_count": 242558
+            },
+            {
+              "asn": 8529,
+              "ip": "2a02:f040:1::11",
+              "prefix_count": 238373
+            },
+            {
+              "asn": 8888,
+              "ip": "2a09:0:15::1",
+              "prefix_count": 247439
+            },
+            {
+              "asn": 924,
+              "ip": "2a06:1280:ce07::42",
+              "prefix_count": 236384
+            }
+          ],
+          "ipv4_full_table_peer_count": 43,
+          "ipv6_full_table_peer_count": 40
+        },
+        {
+          "probe": {
+            "city": "Dubai",
+            "country": "UAE",
+            "longitude": 0,
+            "latitude": 0,
+            "name": "RRC26",
+            "ipv4_peer_count": 17,
+            "ipv6_peer_count": 13,
+            "ixp": "UAE-IX"
+          },
+          "ipv4_full_table_peers_not_seeing": [
+            {
+              "asn": 200612,
+              "ip": "185.1.8.50",
+              "prefix_count": 1063078
+            },
+            {
+              "asn": 48237,
+              "ip": "185.1.8.3",
+              "prefix_count": 1044142
+            },
+            {
+              "asn": 49544,
+              "ip": "185.1.8.59",
+              "prefix_count": 1056098
+            }
+          ],
+          "ipv6_full_table_peers_not_seeing": [
+            {
+              "asn": 200612,
+              "ip": "2001:7f8:73:0:3:fa4:0:1",
+              "prefix_count": 253517
+            },
+            {
+              "asn": 49544,
+              "ip": "2001:7f8:73::c188:0:1",
+              "prefix_count": 241791
+            }
+          ],
+          "ipv4_full_table_peer_count": 3,
+          "ipv6_full_table_peer_count": 2
+        }
+      ],
+      "resource": "33517",
+      "related_prefixes": [],
+      "query_time": "2026-05-19T08:00:00",
+      "latest_time": "2026-05-19T08:00:00",
+      "include": []
+    }
+  },
+  "date_run": "2026-05-19T06:05:42-06:00",
+  "test_name": "fetchVisibility"
+}
