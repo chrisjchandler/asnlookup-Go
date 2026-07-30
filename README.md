@@ -52,13 +52,17 @@ After compiling the Go program, you can run it to access its functionalities. He
     28. Fetch whois information for an IP/Prefix/ASN
     29. Fetch RPKI validation status for an ASN and prefix
     30. Fetch visibility information for an IP/Prefix/ASN
-    31. Exit
+    31. Fetch reverse DNS consistency for an ASN or prefix
+    32. Fetch DNS chain information for a hostname or IP address
+    33. Fetch reverse DNS delegations for a prefix
+    34. Exit
 
 3. **Enter the Required Information**:
 
     - ASN-focused options prompt for an ASN and accept either `AS12345` or `12345`.
     - Prefix-focused options accept either a CIDR prefix directly or an IP address, which is resolved to its covering prefix when required.
     - Mixed lookup options accept an IP, prefix, or ASN depending on the RIPEstat endpoint being queried.
+    - The DNS-chain lookup accepts a hostname or IP address. Reverse-DNS consistency accepts an ASN or prefix, while reverse-DNS delegations accepts a prefix.
 
 4. **View the Results**: The program will display the queried information directly in the terminal and give you an option to save the output to a JSON file.
 
@@ -69,4 +73,7 @@ Choose an option:
     ...
     29. Fetch RPKI validation status for an ASN and prefix
     30. Fetch visibility information for an IP/Prefix/ASN
-    31. Exit
+    31. Fetch reverse DNS consistency for an ASN or prefix
+    32. Fetch DNS chain information for a hostname or IP address
+    33. Fetch reverse DNS delegations for a prefix
+    34. Exit

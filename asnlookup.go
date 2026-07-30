@@ -102,9 +102,12 @@ func main() {
 		fmt.Println("28. Fetch whois information for an IP/Prefix/ASN")
 		fmt.Println("29. Fetch RPKI validation status for an ASN and prefix")
 		fmt.Println("30. Fetch visibility information for an IP/Prefix/ASN")
-		fmt.Println("31. Exit")
+		fmt.Println("31. Fetch reverse DNS consistency for an ASN or prefix")
+		fmt.Println("32. Fetch DNS chain information for a hostname or IP address")
+		fmt.Println("33. Fetch reverse DNS delegations for a prefix")
+		fmt.Println("34. Exit")
 
-		choice, ok := readInt(in, "Enter choice (1-31): ")
+		choice, ok := readInt(in, "Enter choice (1-34): ")
 		if !ok {
 			return
 		}
@@ -171,6 +174,12 @@ func main() {
 		case 30:
 			fetchVisibility(in)
 		case 31:
+			fetchReverseDNSConsistency(in)
+		case 32:
+			fetchDNSChain(in)
+		case 33:
+			fetchReverseDNSDelegations(in)
+		case 34:
 			return
 		default:
 			fmt.Println("Invalid choice.")
@@ -371,6 +380,39 @@ func fetchBlacklistInfo(in *bufio.Reader) {
 	raw := mustFetch(fmt.Sprintf("%s/dns-blocklists/data.json?resource=%s", ripeBase, ip))
 	fmt.Println(prettyJSON(raw))
 	writeToFile("fetchBlacklistInfo", raw)
+}
+
+func fetchReverseDNSConsistency(in *bufio.Reader) {
+	resource := readLine(in, "Enter ASN or prefix: ")
+	if resource == "" {
+		return
+	}
+	if !strings.Contains(resource, ".") && !strings.Contains(resource, ":") && !strings.Contains(resource, "/") {
+		resource = normalizeASN(resource)
+	}
+	raw := mustFetch(fmt.Sprintf("%s/reverse-dns-consistency/data.json?resource=%s", ripeBase, url.QueryEscape(resource)))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchReverseDNSConsistency", raw)
+}
+
+func fetchDNSChain(in *bufio.Reader) {
+	resource := readLine(in, "Enter hostname or IP address: ")
+	if resource == "" {
+		return
+	}
+	raw := mustFetch(fmt.Sprintf("%s/dns-chain/data.json?resource=%s", ripeBase, url.QueryEscape(resource)))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchDNSChain", raw)
+}
+
+func fetchReverseDNSDelegations(in *bufio.Reader) {
+	resource := readLine(in, "Enter prefix: ")
+	if resource == "" {
+		return
+	}
+	raw := mustFetch(fmt.Sprintf("%s/reverse-dns/data.json?resource=%s", ripeBase, url.QueryEscape(resource)))
+	fmt.Println(prettyJSON(raw))
+	writeToFile("fetchReverseDNSDelegations", raw)
 }
 
 func fetchIPAddressSpaceInfo(in *bufio.Reader) {
