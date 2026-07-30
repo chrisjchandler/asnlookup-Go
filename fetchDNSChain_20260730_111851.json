@@ -1,0 +1,42 @@
+{
+  "data": {
+    "messages": [],
+    "see_also": [],
+    "version": "1.0",
+    "data_call_name": "dns-chain",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260730151851-8a704eb4-7047-4666-a14d-d0f302fbd93b",
+    "process_time": 52,
+    "server_id": "app194",
+    "build_version": "v0.11.4-2026.07.30",
+    "pipeline": "1361814",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-07-30T15:18:51.697891",
+    "data": {
+      "query_time": "2026-07-30T15:18:00",
+      "resource": "tiktokv.us",
+      "forward_nodes": {
+        "tiktokv.us": []
+      },
+      "reverse_nodes": {},
+      "authoritative_nameservers": [
+        "a12-65.akam.net",
+        "a1-156.akam.net",
+        "a3-64.akam.net",
+        "a7-65.akam.net",
+        "a16-66.akam.net",
+        "a2-67.akam.net"
+      ],
+      "nameservers": [
+        "193.0.19.101",
+        "2001:67c:2e8:11::c100:1366",
+        "2001:67c:2e8:11::c100:1365",
+        "193.0.19.102"
+      ]
+    }
+  },
+  "date_run": "2026-07-30T11:18:51-04:00",
+  "test_name": "fetchDNSChain"
+}
