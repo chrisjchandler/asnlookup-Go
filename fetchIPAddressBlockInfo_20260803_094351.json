@@ -1,0 +1,39 @@
+{
+  "data": {
+    "messages": [],
+    "see_also": [],
+    "version": "0.4",
+    "data_call_name": "address-space-usage",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260803134351-295bff9f-d5b9-4362-bcf7-c766d2dbc0e7",
+    "process_time": 252,
+    "server_id": "app199",
+    "build_version": "v0.11.4-2026.07.30",
+    "pipeline": "1361814",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-08-03T13:43:51.912390",
+    "data": {
+      "query_time": "2026-08-01T00:00:00",
+      "resource": "71.18.50.0/24",
+      "assignments": [],
+      "allocations": [
+        {
+          "allocation": "70.40.190.0-72.1.223.255",
+          "asn_name": "NON-RIPE-NCC-MANAGED-ADDRESS-BLOCK",
+          "status": "ALLOCATED UNSPECIFIED",
+          "assignments": 0
+        }
+      ],
+      "ip_stats": [
+        {
+          "status": "Non-RIPE (ARIN)",
+          "ips": 256
+        }
+      ]
+    }
+  },
+  "date_run": "2026-08-03T09:43:51-04:00",
+  "test_name": "fetchIPAddressBlockInfo"
+}

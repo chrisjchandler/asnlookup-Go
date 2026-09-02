@@ -1,0 +1,59 @@
+{
+  "data": {
+    "messages": [
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ]
+    ],
+    "see_also": [],
+    "version": "3.4",
+    "data_call_name": "routing-status",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260901191134-a4bc0366-ae3b-44d8-8728-15841d80ddfe",
+    "process_time": 1222,
+    "server_id": "app182",
+    "build_version": "v0.11.10-2026.08.31",
+    "pipeline": "1403542",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-09-01T19:11:35.682774",
+    "data": {
+      "first_seen": {
+        "prefix": "139.177.251.0/24",
+        "origin": "31898",
+        "time": "2022-06-11T00:00:00"
+      },
+      "last_seen": {
+        "prefix": "139.177.251.0/24",
+        "origin": "31898",
+        "time": "2026-09-01T16:00:00"
+      },
+      "visibility": {
+        "v4": {
+          "ris_peers_seeing": 327,
+          "total_ris_peers": 327
+        },
+        "v6": {
+          "ris_peers_seeing": 0,
+          "total_ris_peers": 0
+        }
+      },
+      "origins": [
+        {
+          "origin": 31898,
+          "route_objects": [
+            "RADB"
+          ]
+        }
+      ],
+      "less_specifics": [],
+      "more_specifics": [],
+      "resource": "139.177.251.0/24",
+      "query_time": "2026-09-01T16:00:00"
+    }
+  },
+  "date_run": "2026-09-01T15:11:35-04:00",
+  "test_name": "fetchRoutingStatusByIPAddressBlock"
+}

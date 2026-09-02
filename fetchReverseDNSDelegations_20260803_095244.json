@@ -1,0 +1,25 @@
+{
+  "data": {
+    "messages": [],
+    "see_also": [],
+    "version": "1.0",
+    "data_call_name": "reverse-dns",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260803135244-0b9f8786-2643-4481-b0b3-758b0761d2e0",
+    "process_time": 30,
+    "server_id": "app165",
+    "build_version": "v0.11.4-2026.07.30",
+    "pipeline": "1361814",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-08-03T13:52:44.347795",
+    "data": {
+      "delegations": [],
+      "resource": "71.18.50.230",
+      "query_time": "2026-08-03T13:52:00"
+    }
+  },
+  "date_run": "2026-08-03T09:52:44-04:00",
+  "test_name": "fetchReverseDNSDelegations"
+}

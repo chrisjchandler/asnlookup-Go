@@ -1,0 +1,69 @@
+{
+  "data": {
+    "messages": [
+      [
+        "info",
+        "IP address (71.18.50.229) has been converted to its encompassing routed prefix (71.18.50.0/24)"
+      ],
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ]
+    ],
+    "see_also": [],
+    "version": "3.4",
+    "data_call_name": "routing-status",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260803133044-ae77420e-e002-4d0b-9954-ddc5d6e09df5",
+    "process_time": 1422,
+    "server_id": "app174",
+    "build_version": "v0.11.4-2026.07.30",
+    "pipeline": "1361814",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-08-03T13:30:45.537380",
+    "data": {
+      "first_seen": {
+        "prefix": "71.18.50.0/24",
+        "origin": "396986",
+        "time": "2023-06-30T00:00:00"
+      },
+      "last_seen": {
+        "prefix": "71.18.50.0/24",
+        "origin": "396986,11983",
+        "time": "2026-08-03T08:00:00"
+      },
+      "visibility": {
+        "v4": {
+          "ris_peers_seeing": 327,
+          "total_ris_peers": 327
+        },
+        "v6": {
+          "ris_peers_seeing": 0,
+          "total_ris_peers": 0
+        }
+      },
+      "origins": [
+        {
+          "origin": 396986,
+          "route_objects": [
+            "ARIN"
+          ]
+        },
+        {
+          "origin": 11983,
+          "route_objects": [
+            "ARIN"
+          ]
+        }
+      ],
+      "less_specifics": [],
+      "more_specifics": [],
+      "resource": "71.18.50.0/24",
+      "query_time": "2026-08-03T08:00:00"
+    }
+  },
+  "date_run": "2026-08-03T09:30:45-04:00",
+  "test_name": "fetchRoutingStatusByIP"
+}
